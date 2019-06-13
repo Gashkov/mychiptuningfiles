@@ -1,0 +1,67 @@
+// Media Query Vars
+$mobileXS-min: 320px;
+$mobile-min: 480px;
+$tablet-min: 768px;
+$desktop-min: 992px;
+$wideScreen-min: 1200px;
+
+//==========================
+// Color Overrides
+//==========================
+
+/*DEFAULT COLORS*/
+$primaryColor: #004b8d;
+$buttonPrimary: #004b8d;
+$buttonHover: #002d5d;
+$snapToggleColor: #fff;
+$white: #fff;
+$black: #000;
+$light-black: #000104;
+$orange: #d15420;
+$purple: #843789;
+$grey: #5A6368;
+/*END DEFAULT COLORS*/
+
+//CASTOM COLORS
+$white-milk: #F4F1EF;
+$dark-orange-arkon: #D15420;
+$orange-arkon: #f37321;
+$papayawhip: #f4f1ef;
+
+//==========================
+// fonts
+//==========================
+
+$primaryFont: 'NewsGoth Dm BT', sans-serif;
+$secondaryFont: 'NewsGoth BT', sans-serif;
+
+//==========================
+// Override fontsize
+//==========================
+$h1-desktop: 70px;
+$h1-mobile: 32px;
+
+$h2-desktop: 44px;
+$h2-mobile: 30px;
+
+$h3-desktop: 32px;
+$h3-mobile: 30px;
+
+$h4-desktop: 24px;
+$h4-mobile: 24px;
+
+$h5-desktop: 13px;
+$h5-mobile: 12px;
+
+$p-desktop: 18px;
+$p-mobile: 14px;
+
+$li-desktop: 11px;
+$li-mobile: 11px;
+
+
+//==========================
+// Padding
+//==========================
+$brick-padding: 40px 15px;
+$button-padding: 10px 40px;
