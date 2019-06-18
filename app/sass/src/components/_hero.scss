@@ -1,0 +1,126 @@
+.hero {
+	background-image: url('../../../img/hero_home.jpg');
+	background-size: cover;
+	background-position: center;
+
+	&__title,
+	&__subtitle {
+		color: $white;
+		line-height: 1;
+	}
+
+	&__subtitle {
+		margin-bottom: 45px;
+	}
+
+	.search {
+		display: flex;
+		margin-bottom: 10px;
+		&__icon {
+			padding: 8px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			font-size: 15px;
+			background: #10549E;
+			border-radius: 5px 0 0 5px;
+			color: $white;
+			width: 45px;
+			img {
+				display: inline-block;
+				margin-bottom: 3px;
+			}
+		}
+		&__btn {
+			width: 24%;
+			display: flex;
+			height: 60px;
+			position: relative;
+			input {
+				border-radius: 0 5px 5px 0;
+				display: block;
+				width: 100%;
+				background-color: $yellow;
+				padding: 10px;
+			}
+		}
+
+		&__btn-icon {
+			position: absolute;
+			top: -68px;
+			right: -32px;
+		}
+
+		&__field {
+			width: 75%;
+			margin-right: 20px;
+			border-radius: 5px;
+			border: none;
+			padding: 15px;
+			height: 60px;
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  font-style: italic;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  font-style: italic;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  font-style: italic;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  font-style: italic;
+			}
+		}
+		&__btn {
+			input {
+				height: 100%;
+			}
+		}
+	}//end .search
+
+	.search-nav {
+		display: flex;
+		padding: 0 10px;
+
+		&__item {
+			padding: 0 10px;
+			border-right: 1px solid $red;
+			line-height: 1;
+			margin-bottom: 75px;
+			&:last-child {
+				border-right: none;
+			}
+			a {
+				font-size: 16px;
+			}
+		}
+	}//end .search
+
+	.usp {
+		border-top: 2px solid rgba(248, 248, 248, .16);
+		padding: 15px 0;
+		&__item {
+			display: flex;
+			i {
+				font-size: 25px;
+				color: $green;
+				margin-right: 10px;
+			}
+		}
+
+		&__text {
+			color: $white;
+			h5 {
+				font-weight: semibildFont;
+				font-size: 18px;
+				line-height: 1.1;
+			}
+			p {
+				font-size: 15px;
+				color: $lightGray;
+				line-height: 1.1;
+			}
+		}
+	}
+
+}

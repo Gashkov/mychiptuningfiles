@@ -1,0 +1,28 @@
+.partners {
+	padding: 50px 0;
+	h3 {
+		font-size: 40px;
+		font-weight: $extralightFont;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #ebebeb;
+		margin-bottom: 25px;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		li {
+			width: 17%;
+			text-align: center;
+			&:first-child {
+				text-align: left;
+			}
+			&:last-child {
+				text-align: right;
+			}
+			&:nth-child(3) {
+				width: 33%;
+			}
+		}
+	}
+}

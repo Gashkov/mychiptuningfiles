@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,900&display=swap'); //fonts-import
+
 // Media Query Vars
 $mobileXS-min: 320px;
 $mobile-min: 480px;
@@ -10,41 +12,45 @@ $wideScreen-min: 1200px;
 //==========================
 
 /*DEFAULT COLORS*/
-$primaryColor: #004b8d;
-$buttonPrimary: #004b8d;
-$buttonHover: #002d5d;
-$snapToggleColor: #fff;
+$primaryColor: #4B4B4B;
 $white: #fff;
-$black: #000;
-$light-black: #000104;
-$orange: #d15420;
-$purple: #843789;
-$grey: #5A6368;
+$red: #C8001A;
+$darkRed: #B40017;
+$green: #09B900;
+$darkGreen: #08A600;
+$yellow: #FEC831;
+$lightGray: #D9D9D9;
+$gray: #fafafa;
+$darkGray: #3d3d3d;
+$borderGray: #f0f0f0;
 /*END DEFAULT COLORS*/
 
-//CASTOM COLORS
-$white-milk: #F4F1EF;
-$dark-orange-arkon: #D15420;
-$orange-arkon: #f37321;
-$papayawhip: #f4f1ef;
 
 //==========================
 // fonts
 //==========================
 
-$primaryFont: 'NewsGoth Dm BT', sans-serif;
-$secondaryFont: 'NewsGoth BT', sans-serif;
+$primaryFont: 'Source Sans Pro', sans-serif;
+
+/*DEFAULT WEIGHT*/
+$blackFont: 900;
+$boldFont: 700;
+$semiboldFont: 600;
+$lightFont: 300;
+$extralightFont: 200;
+
+/*END FONT WEIGHT*/
 
 //==========================
 // Override fontsize
 //==========================
-$h1-desktop: 70px;
+$h1-desktop: 65px;
 $h1-mobile: 32px;
 
-$h2-desktop: 44px;
+$h2-desktop: 55px;
 $h2-mobile: 30px;
 
-$h3-desktop: 32px;
+$h3-desktop: 40px;
 $h3-mobile: 30px;
 
 $h4-desktop: 24px;
@@ -53,15 +59,15 @@ $h4-mobile: 24px;
 $h5-desktop: 13px;
 $h5-mobile: 12px;
 
-$p-desktop: 18px;
-$p-mobile: 14px;
+$p-desktop: 15px;
+$p-mobile: 13px;
 
-$li-desktop: 11px;
-$li-mobile: 11px;
+$li-desktop: 15px;
+$li-mobile: 13px;
 
 
 //==========================
 // Padding
 //==========================
-$brick-padding: 40px 15px;
+$brick-padding: 70px 0;
 $button-padding: 10px 40px;

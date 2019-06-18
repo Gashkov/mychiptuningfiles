@@ -1,0 +1,23 @@
+.advice {
+	background: linear-gradient(130deg, $red 50%, $primaryColor 50%);
+
+	&__content {
+		color: $white;
+		p {
+			max-width: 465px;
+			font-weight: 400;
+			font-size: 20px;
+		}
+		h3 {
+			margin: 0;
+			font-size: 45px;
+			font-weight: $boldFont;
+		}
+	}
+
+	&__banner {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+}

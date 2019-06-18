@@ -1,0 +1,116 @@
+body {
+	font-family: $primaryFont;
+	color: $primaryColor;
+	line-height: 135%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+	transition: .3s;
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+p {
+	font-size: $p-mobile;
+	font-weight: $lightFont;
+	margin: 0;
+	@media (min-width: $tablet-min) {
+		font-size: $p-desktop;
+	}
+}
+strong {
+	font-weight: $blackFont;
+}
+
+h1 {
+	font-weight: $lightFont;
+	font-size: $h1-mobile;
+	@media (min-width: $tablet-min) {
+		font-size: $h1-desktop;
+	}
+	span {
+		font-weight: $semiboldFont;
+		font-size: inherit;
+	}
+}
+
+h2 {
+	font-size: $h2-mobile;
+	@media (min-width: $tablet-min) {
+		font-size: $h2-desktop;
+	}
+}
+
+h3 {
+	font-size: $h3-mobile;
+	@media (min-width: $tablet-min) {
+		font-size: $h3-desktop;
+	}
+}
+
+input {
+	border-radius: 6px;
+	border: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container-fluid {
+	max-width: 1170px;
+}
+
+.cta-icon {
+	background: $primaryColor;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: $semiboldFont;
+	display: inline-flex;
+	&:hover {
+		background-color: $darkGray;
+		.cta-icon__icon {
+			background-color: $primaryColor;
+		}
+	}
+	&__text {
+		padding: 15px 30px;
+	}
+
+	&__icon {
+		background-color: $darkGray;
+		border-radius: 0 4px 4px 0;
+		width: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: .3s;
+		i {
+			font-size: 22px;
+		}
+	}
+
+	&_red {
+		background-color: $red;
+		&:hover {
+			background-color: $darkRed;
+			.cta-icon__icon {
+				background-color: $red;
+			}
+		}
+		.cta-icon__icon {
+			background-color: $darkRed;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.footer {
+	&__top {
+		background: url('../../../img/footer_bg.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 55px 0;
+	}
+
+	&__contacts {
+		position: relative;
+		&:after {
+			content: '';
+			width: 5px;
+			height: 100%;
+			background: #B89B9F;
+			border-radius: 2px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+		img {
+			max-width: 266px;
+			margin-bottom: 35px;
+		}
+	}
+
+	&__address {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 350px;
+		p {
+			color: $white;
+			font-size: 18px;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+		i {
+			color: $red;
+			font-size: 20px;
+			margin-right: 10px;
+			&.fa-mobile-alt {
+				margin-left: 3px;
+			}
+		}
+		a {
+			display: block;
+			width: 100%;
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__address-text {
+		margin-bottom: 35px;
+	}
+
+	&__lists {
+		display: flex;
+	}
+
+	&__list {
+		color: $white;
+		font-size: 18px;
+		margin-left: 60px;
+		li {
+			margin-bottom: 10px;
+			i {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__bottom {
+		padding: 20px 0;
+		p {
+			margin-right: 20px;
+		}
+	}
+}

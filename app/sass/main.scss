@@ -1,10 +1,21 @@
 //default imports
-
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 //base imports
 @import 'src/vars';
-@import 'src/reset';
 @import 'src/base';
 
 
 //components imports
+@import 'src/components/header';
+@import 'src/components/hero';
+@import 'src/components/bricks/microblog';
+@import 'src/components/bricks/advice';
+@import 'src/components/bricks/brands';
+@import 'src/components/map';
+@import 'src/components/bricks/article';
+@import 'src/components/bricks/blog';
+@import 'src/components/bricks/product-list';
+@import 'src/components/bricks/testimonials';
+@import 'src/components/bricks/partners';
+@import 'src/components/footer';

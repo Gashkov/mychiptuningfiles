@@ -1,0 +1,31 @@
+.article {
+	padding: $brick-padding;
+	h3 {
+		font-weight: $lightFont;
+		margin-bottom: 20px;
+		font-size: 40px;
+		strong {
+			font-weight: $semiboldFont;
+			color: $red;
+		}
+	}
+	h5 {
+		margin-bottom: 25px;
+		font-size: 18px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 400;
+	}
+	ol {
+		padding-left: 15px;
+		font-size: 18px;
+	}
+	img {
+		display: inline-block;
+		margin-bottom: 25px;
+	}
+	.cta-icon {
+		margin-top: 35px;
+	}
+}

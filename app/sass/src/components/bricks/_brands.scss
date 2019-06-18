@@ -1,0 +1,40 @@
+.brands {
+	display: flex;
+	@media (min-width: $wideScreen-min) {
+		padding: 40px 80px;
+	}
+	&__text {
+		width: 23.3%;
+		padding-right: 10px;
+		@media (min-width: $wideScreen-min) {
+			padding-right: 50px;
+		}
+		h3 {
+			font-size: 40px;
+			font-weight: $extralightFont;
+			span {
+				font-weight: $semiboldFont;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		width: 76.7%;
+		list-style-type: none;
+	}
+
+	&__item {
+		width: 12.5%;
+		border-right: 1px solid #eaeaea;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:first-child {
+			border-left: 1px solid #eaeaea;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+}

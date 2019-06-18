@@ -1,0 +1,42 @@
+.blog {
+	padding: $brick-padding;
+	h3 {
+		font-size: 40px;
+		font-weight: $extralightFont;
+		margin-bottom: 30px;
+		span {
+			color: $red;
+			font-weight: $semiboldFont;
+		}
+	}
+	&__img {
+		margin-bottom: 15px;
+	}
+
+	&__content {
+		padding: 0 15px 15px 15px;
+		h4 {
+			font-size: 20px;
+			font-weight: $boldFont;
+			border-bottom: 1px solid #ebebeb;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+		}
+		time {
+			color: #777;
+			font-size: 14px;
+		}
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
+		a {
+			color: $red;
+			font-weight: $semiboldFont;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

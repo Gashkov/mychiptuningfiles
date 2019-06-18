@@ -1,0 +1,135 @@
+.microblog {
+	padding: $brick-padding;
+	background: url('../../../../img/microblog-home_bg.jpg') no-repeat;
+	background-position: top right;
+	background-color: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+	
+	h3 {
+		font-weight: $extralightFont;
+		margin-bottom: 20px;
+		span {
+			font-weight: $semiboldFont;
+			color: $red;
+		}
+	}
+	
+	&__subtitle {
+		max-width: 850px;
+		margin: 0 auto 30px auto;
+		text-align: center;
+		font-weight: $lightFont;
+		font-size: 20px;
+		span {
+			font-weight: $semiboldFont;
+		}
+	}
+
+	&__item {
+		background: $white;
+		border-radius: 5px;
+		box-shadow: 4px 14px 21px -10px rgba(0, 0, 0, 0.55);
+		position: relative;
+	}
+
+	&__number {
+		width: 75px;
+		height: 75px;
+		background: $red;
+		color: $white;
+		border: 5px solid $white;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -36px;
+		margin: 0 auto;
+		font-weight: $boldFont;
+		font-size: 35px;
+	}
+
+	&__body {
+		padding: 55px 15px 15px 15px;
+		h4 {
+			font-size: 25px;
+			font-weight: $semiboldFont;
+		}
+		p {
+			color: #7C7C7C;
+			font-weight: 400;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__footer {
+		background: $red;
+		border-radius: 0 0 4px 4px;
+		padding: 10px 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $white;
+		font-size: 18px;
+		font-weight: $semiboldFont;
+	}
+}
+
+.microblog-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid $borderGray;
+	background-color: $gray;
+	font-size: 20px;
+	margin-bottom: 80px;
+	&__btn {
+		background-color: $primaryColor;
+		border-radius: 5px;
+		text-align: center;
+		min-width: 340px;
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		&:hover {
+			background-color: $darkGray;
+			.microblog-video__icon {
+				background: $primaryColor;
+			}
+		}
+	}
+	&__btn-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		font-weight: $semiboldFont;
+		font-size: 18px;
+	}
+	&__icon {
+		width: 50px;
+		background-color: $darkGray;
+		border-radius: 0 4px 4px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .3s;
+		i {
+			font-size: 13px;
+		}
+	}
+	&__text {
+		width: 100%;
+		font-size: 20px;
+		margin-right: 30px;
+		span {
+			font-weight: 400;
+			&.red {
+				color: $red;
+			}
+		}
+	}
+}

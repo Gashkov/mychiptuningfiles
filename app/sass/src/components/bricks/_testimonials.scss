@@ -1,0 +1,49 @@
+.testimonials {
+	background: url('../../../../img/testimonials_bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 110px 0;
+
+	&__card {
+		max-width: 770px;
+		margin: 0 auto;
+		color: $white;
+		font-weight: 400;
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 25px;
+		img {
+			margin-right: 10px;
+		}
+	}
+
+	&__name {
+		p {
+			font-weight: $semiboldFont;
+			font-size: 22px;
+			margin-bottom: 3px;
+		}
+		.stars {
+			i {
+				color: $yellow;
+				font-size: 13px;
+			}
+		}
+	}
+
+	&__content {
+		text-align: center;
+		margin-bottom: 25px;
+		font-weight: 400;
+	}
+
+	&__author {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
