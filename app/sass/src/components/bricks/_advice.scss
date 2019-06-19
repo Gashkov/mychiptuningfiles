@@ -1,17 +1,69 @@
 .advice {
-	background: linear-gradient(130deg, $red 50%, $primaryColor 50%);
-
+	@media (min-width: $desktop-min) {
+		background: linear-gradient(130deg, $red 50%, $primaryColor 50%);
+	}
+	// &__container {
+	// 	padding: 0;
+	// 	@media (min-width: $desktop-min) {
+	// 		padding-right: 15px;
+	// 		padding-left: 15px;
+	// 	}
+	// 	.col-lg-6 {
+	// 		padding: 0;
+	// 		@media (min-width: $desktop-min) {
+	// 			padding-right: 15px;
+	// 			padding-left: 15px;
+	// 		}
+	// 	}
+	// }
 	&__content {
 		color: $white;
+		background-color: $red;
+		width: 100%;
+		padding: 20px 15px;
+		position: relative;
+		&:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 12px 12.5px 0 12.5px;
+			border-color: $red transparent transparent transparent;
+			position: absolute;
+			bottom: -12px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			z-index: 1;
+		}
+		@media (min-width: $desktop-min) {
+			background: transparent;
+			padding: 0;
+		}
 		p {
-			max-width: 465px;
+			text-align: center;
 			font-weight: 400;
-			font-size: 20px;
+			font-size: 16px;
+
+			&:first-of-type {
+				text-align: left;
+				font-weight: $lightFont;
+				font-size: 22px;
+			}
+			@media (min-width: $desktop-min) {
+				max-width: 465px;
+				text-align: left;
+				font-size: 20px;
+			}
 		}
 		h3 {
-			margin: 0;
-			font-size: 45px;
+			margin-bottom: 10px;
+			font-size: 30px;
 			font-weight: $boldFont;
+			@media (min-width: $desktop-min) {
+				font-size: 45px;
+				margin: 0;
+			}
 		}
 	}
 
@@ -19,5 +71,19 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
+		background: #4B4B4B;
+		padding-top: 15px;
+		@media (min-width: $desktop-min) {
+			background: transparent;
+			max-width: 465px;
+			text-align: left;
+			padding: 0;
+		}
+		img {
+			margin-right: 70px;
+			@media (min-width: $desktop-min) {
+				margin: 0;
+			}
+		}
 	}
 }

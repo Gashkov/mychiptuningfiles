@@ -3,11 +3,20 @@
 		background: url('../../../img/footer_bg.jpg') no-repeat;
 		background-size: cover;
 		background-position: center;
-		padding: 55px 0;
+		padding: 25px 0;
+		@media (min-width: $desktop-min) {
+			padding: 55px 0;
+		}
 	}
 
 	&__contacts {
 		position: relative;
+		width: 100%;
+		text-align: center;
+		@media (min-width: $desktop-min) {
+			width: auto;
+			text-align: left;
+		}
 		&:after {
 			content: '';
 			width: 5px;
@@ -18,6 +27,10 @@
 			right: 0;
 			top: 0;
 			bottom: 0;
+			display: none;
+			@media (min-width: $desktop-min) {
+				display: block;
+			}
 		}
 		img {
 			max-width: 266px;
@@ -28,7 +41,13 @@
 	&__address {
 		display: flex;
 		flex-wrap: wrap;
-		max-width: 350px;
+		width: 100%;
+		text-align: left;
+		max-width: 270px;
+		margin: 0 auto;
+		@media (min-width: $desktop-min) {
+			max-width: 350px;
+		}
 		p {
 			color: $white;
 			font-size: 18px;
@@ -48,21 +67,31 @@
 			width: 100%;
 			font-size: 18px;
 			margin-bottom: 5px;
+			white-space: nowrap;
 		}
 	}
 
 	&__address-text {
-		margin-bottom: 35px;
+		margin-bottom: 15px;
+		@media (min-width: $desktop-min) {
+			margin-bottom: 35px;
+		}
 	}
 
 	&__lists {
-		display: flex;
+		display: none;
+		@media (min-width: $desktop-min) {
+			display: flex;
+		}
 	}
 
 	&__list {
 		color: $white;
 		font-size: 18px;
-		margin-left: 60px;
+		margin-left: 30px;
+		@media (min-width: $wideScreen-min) {
+			margin-left: 60px;
+		}
 		li {
 			margin-bottom: 10px;
 			i {
@@ -74,7 +103,39 @@
 	&__bottom {
 		padding: 20px 0;
 		p {
-			margin-right: 20px;
+			@media (min-width: $desktop-min) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__bottom-row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-items: center;
+		@media (min-width: $desktop-min) {
+			flex-direction: row;
+		}
+	}
+
+	.copyright {
+		text-align: center;
+		width: 100%;
+		padding: 15px 0 0 0;
+		border-top: 1px solid #EBEBEB;
+		margin-top: 15px;
+		font-weight: 400;
+		@media (min-width: $desktop-min) {
+			border: none;
+			padding: 0;
+			margin: 0;
+			width: auto;
+		}
+		a {
+			color: $red;
+			font-weight: $semiboldFont;
 		}
 	}
 }

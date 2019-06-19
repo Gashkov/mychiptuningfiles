@@ -4,7 +4,10 @@
 	background-position: center;
 	padding: 60px 0;
 	color: $white;
-
+	display: none;
+	@media (min-width: $desktop-min) {
+		display: block;
+	}
 	&__content {
 		display: flex;
 		flex-direction: column;

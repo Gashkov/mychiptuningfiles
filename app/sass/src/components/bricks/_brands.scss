@@ -1,17 +1,35 @@
 .brands {
-	display: flex;
+	display: none;
+	flex-direction: column;
+	padding: 20px 15px;
+	@media (min-width: $desktop-min) {
+		display: flex;
+	}
+	@media (min-width: $desktop-min) {
+		flex-direction: row;
+		padding: 40px;
+	}
 	@media (min-width: $wideScreen-min) {
 		padding: 40px 80px;
 	}
 	&__text {
-		width: 23.3%;
 		padding-right: 10px;
+		@media (min-width: $desktop-min) {
+			width: 23.3%;
+		}
 		@media (min-width: $wideScreen-min) {
 			padding-right: 50px;
 		}
 		h3 {
-			font-size: 40px;
+			font-size: 30px;
 			font-weight: $extralightFont;
+			text-align: center;
+			margin-bottom: 20px;
+			@media (min-width: $desktop-min) {
+				text-align: right;
+				margin: 0;
+				font-size: 40px;
+			}
 			span {
 				font-weight: $semiboldFont;
 			}
@@ -20,8 +38,10 @@
 
 	&__list {
 		display: flex;
-		width: 76.7%;
 		list-style-type: none;
+		@media (min-width: $desktop-min) {
+			width: 76.7%;
+		}
 	}
 
 	&__item {
@@ -30,8 +50,17 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 0 5px;
+		@media (min-width: $desktop-min) {
+			padding: 0;
+		}
+		@media (min-width: $desktop-min) {
+			padding: 0;
+		}
 		&:first-child {
-			border-left: 1px solid #eaeaea;
+			@media (min-width: $desktop-min) {
+				border-left: 1px solid #eaeaea;
+			}
 		}
 		&:last-child {
 			border-right: none;
