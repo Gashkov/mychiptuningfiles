@@ -2,6 +2,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 //base imports
+@import 'src/reset';
 @import 'src/vars';
 @import 'src/base';
 
@@ -19,3 +20,4 @@
 @import 'src/components/bricks/testimonials';
 @import 'src/components/bricks/partners';
 @import 'src/components/footer';
+@import 'src/components/bricks/bnefits-mobile';

@@ -1,5 +1,9 @@
 .blog {
 	padding: $brick-padding;
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
 	h3 {
 		font-size: 40px;
 		font-weight: $extralightFont;

@@ -2,9 +2,14 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 ul {
@@ -19,4 +24,5 @@ a {
 
 p {
 	margin: 0;
+	line-height: 25px;
 }

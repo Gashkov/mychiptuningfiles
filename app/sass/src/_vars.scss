@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,900&display=swap'); //fonts-import
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
 
 // Media Query Vars
 $mobileXS-min: 320px;
@@ -31,6 +33,7 @@ $borderGray: #f0f0f0;
 //==========================
 
 $primaryFont: 'Source Sans Pro', sans-serif;
+$secondaryFont: 'Kalam', cursive;
 
 /*DEFAULT WEIGHT*/
 $blackFont: 900;

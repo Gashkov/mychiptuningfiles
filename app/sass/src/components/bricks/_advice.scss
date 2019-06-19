@@ -2,20 +2,13 @@
 	@media (min-width: $desktop-min) {
 		background: linear-gradient(130deg, $red 50%, $primaryColor 50%);
 	}
-	// &__container {
-	// 	padding: 0;
-	// 	@media (min-width: $desktop-min) {
-	// 		padding-right: 15px;
-	// 		padding-left: 15px;
-	// 	}
-	// 	.col-lg-6 {
-	// 		padding: 0;
-	// 		@media (min-width: $desktop-min) {
-	// 			padding-right: 15px;
-	// 			padding-left: 15px;
-	// 		}
-	// 	}
-	// }
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 	&__content {
 		color: $white;
 		background-color: $red;
@@ -38,11 +31,15 @@
 		}
 		@media (min-width: $desktop-min) {
 			background: transparent;
-			padding: 0;
+			padding: 40px 15px;
+			width: 50%;
+			&:after {
+				display: none;
+			}
 		}
 		p {
 			text-align: center;
-			font-weight: 400;
+			font-weight: $lightFont;
 			font-size: 16px;
 
 			&:first-of-type {
@@ -59,7 +56,7 @@
 		h3 {
 			margin-bottom: 10px;
 			font-size: 30px;
-			font-weight: $boldFont;
+			font-weight: $semiboldFont;
 			@media (min-width: $desktop-min) {
 				font-size: 45px;
 				margin: 0;
@@ -68,6 +65,7 @@
 	}
 
 	&__banner {
+		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
@@ -75,15 +73,10 @@
 		padding-top: 15px;
 		@media (min-width: $desktop-min) {
 			background: transparent;
-			max-width: 465px;
+			width: 50%;
 			text-align: left;
 			padding: 0;
-		}
-		img {
-			margin-right: 70px;
-			@media (min-width: $desktop-min) {
-				margin: 0;
-			}
+			height: 100%;
 		}
 	}
 }

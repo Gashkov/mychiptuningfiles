@@ -3,7 +3,10 @@
 	background-size: cover;
 	background-position: center;
 	padding: 110px 0;
-
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
 	&__card {
 		max-width: 770px;
 		margin: 0 auto;

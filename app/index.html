@@ -55,9 +55,10 @@
 							<li class="nav__item"><a href="#">Nieuws</a></li>
 							<li class="nav__item"><a href="#">Video’s</a></li>
 							<li class="nav__item"><a href="#">Inloggen</a></li>
-							<li>
+							<li class="nav__item">
 								<div class="dropdown">
 									<a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-caret-down"></i>
 										<img src="img/netherland_flag.png" alt="flag">
 									</a>
 
@@ -72,8 +73,11 @@
 						<ul class="nav__bottom">
 							<li class="nav__item"><a href="#">Home</a></li>
 							<li class="nav__item"><a href="#">Chiptuning files</a></li>
-							<li class="nav__item nav__item_icon">
-								<img src="img/webshop_arrow.png" alt="#">
+							<li class="nav__item">
+								<div class="nav__item-icon">
+									<img src="img/webshop_arrow.svg" alt="#">
+									<span>Webshop</span>
+								</div>
 								<a href="#">Chiptuning tools</a>
 							</li>
 							<li class="nav__item"><a href="#">Dealer worden?</a></li>
@@ -120,6 +124,24 @@
 											<a href="">API</a>
 										</li>
 									</ul>
+									<a href="#" class="cta-icon cta-icon_left cta-icon_green">
+										<span class="cta-icon__icon">
+											<i class="fas fa-user-plus"></i>
+										</span>
+										<span class="cta-icon__text">Gratis account aanmaken</span>
+									</a>
+									<div class="dropdown mobile-dropdowm">
+									  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    Kies een taal
+									    <i class="fas fa-sort-down"></i>
+									    <img src="img/netherland_flag.png" alt="flag">
+									  </button>
+									  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									    <a class="dropdown-item" href="#">Action</a>
+									    <a class="dropdown-item" href="#">Another action</a>
+									    <a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
 								</div>
 							</div>
 						<!--end mobile nav-->
@@ -139,7 +161,10 @@
 						<form class="search" action="">
 							<input class="search__field" type="text" placeholder="U kunt hier zoeken naar alle voertuigen, nieuws en dealer pakketten">
 							<div class="search__btn">
-								<img src="img/input_icon.png" class="search__btn-icon" alt="#">
+								<div class="search__btn-icon">
+									<span>Zoek op kenteken</span>
+									<img src="img/arrow-right.svg" alt="arrow">
+								</div>
 								<div class="search__icon">
 									<img src="img/europe_icon.png" alt="europe icon">
 									NL
@@ -280,24 +305,49 @@
 		</div><!--End microblog-->
 
 		<div class="advice">
-			<div class="container-fluid advice__container">
-				<div class="row">
-					<div class="col-lg-6 align-items-center d-flex">
-						<div class="advice__content">
-							<p>Wilt u graag</p>
-							<h3>PERSOONLIJK ADVIES?</h3>
-							<p>Heeft u vragen over de mogelijkheden voor uw auto? Wilt u dealer worden of heeft u vragen over onze tools? Stel ze gerust, we staan voor u klaar!</p>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="advice__banner">
-							<img src="img/advice-home_img.png" alt="people">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--End advice-->
+		    <div class="advice__container">
+		        <div class="advice__content">
+		            <p>Wilt u graag</p>
+		            <h3>PERSOONLIJK ADVIES?</h3>
+		            <p>Heeft u vragen over de mogelijkheden voor uw auto? Wilt u dealer worden of heeft u vragen over onze tools? Stel ze gerust, we staan voor u klaar!</p>
+		        </div>
+		        <div class="advice__banner">
+		            <img src="img/advice-home_img.png" alt="people">
+		        </div>
+		    </div>
+		</div>
+		<!--End advice-->
 
+		<div class="benefits-mobile">
+			<h3>Waarom kiezen voor 
+				<span>MyChiptuningfiles?</span>
+			</h3>
+			<ul class="benefits-mobile__list">
+				<li>
+					<i class="fas fa-check"></i>
+					4X4 Dyno ontwikkeld en langetermijn getest
+				</li>
+				<li>
+					<i class="fas fa-check"></i>
+					Fase 1 file + Limited Map Packs met gedetailleerde beschrijving
+				</li>
+				<li>
+					<i class="fas fa-check"></i>
+					Dagelijkse updates met de nieuwste files
+				</li>
+				<li>
+					<i class="fas fa-check"></i>
+					Meer dan 15.000 files verkrijgbaar op onze server
+				</li>
+			</ul>
+			<a href="#" class="cta-icon cta-icon_left cta-icon_green">
+				<span class="cta-icon__icon">
+					<i class="fas fa-user-plus"></i>
+				</span>
+				<span class="cta-icon__text">Gratis account aanmaken</span>
+			</a>
+		</div>
+		
 		<div class="brands">
 			<div class="brands__text">
 				<h3>

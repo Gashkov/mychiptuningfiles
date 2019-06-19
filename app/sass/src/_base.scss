@@ -84,6 +84,27 @@ img {
 			background-color: $primaryColor;
 		}
 	}
+	&_left {
+		.cta-icon__icon {
+			border-radius: 4px 0 0 4px;
+		}
+	}
+	&_green {
+		.cta-icon__icon {
+			border-radius: 4px 0 0 4px;
+			background: $darkGreen;
+			&:hover {
+				background-color: $green;
+			}
+		}
+		.cta-icon__text {
+			background: $green;
+			border-radius: 0 5px 5px 0;
+			&:hover {
+				background: $darkGreen;
+			}
+		}
+	}
 	&__text {
 		padding: 15px 30px;
 	}

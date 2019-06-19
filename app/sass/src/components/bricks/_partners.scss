@@ -1,5 +1,9 @@
 .partners {
 	padding: 50px 0;
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
 	h3 {
 		font-weight: $extralightFont;
 		padding-bottom: 25px;

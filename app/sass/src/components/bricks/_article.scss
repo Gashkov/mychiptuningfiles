@@ -1,5 +1,9 @@
 .article {
 	padding: $brick-padding;
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
 	h3 {
 		font-weight: $lightFont;
 		margin-bottom: 20px;
