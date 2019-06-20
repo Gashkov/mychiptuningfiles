@@ -6,6 +6,7 @@
 	}
 	@media (min-width: $desktop-min) {
 		background: url('../../../../img/microblog-home_bg.jpg') no-repeat;
+		background-size: cover;
 	}
 	h3 {
 		font-weight: $extralightFont;
@@ -154,7 +155,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		width: 85%;
 		font-weight: 400;
 		font-size: 18px;
 	}

@@ -9,6 +9,10 @@
 		padding-bottom: 25px;
 		border-bottom: 1px solid #ebebeb;
 		margin-bottom: 25px;
+		span {
+			color: $red;
+			font-weight: $semiboldFont;
+		}
 	}
 	&__list {
 		display: flex;

@@ -15,10 +15,14 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		align-items: center;
 		margin-bottom: 20px;
 		h3 {
 			font-weight: $lightFont;
 			font-size: 40px;
+		}
+		.cta-icon {
+			font-weight: 400;
 		}
 	}
 

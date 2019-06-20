@@ -2,6 +2,7 @@
 	background-image: url('../../../img/hero_home.jpg');
 	background-size: cover;
 	background-position: center;
+	position: relative;
 
 	&__title,
 	&__subtitle {
@@ -16,14 +17,26 @@
 
 	.search {
 		display: flex;
-		margin-bottom: 30px;
+		margin-bottom: 120px;
 		flex-direction: column;
 		align-items: center;
+		position: relative;
 		@media (min-width: $tablet-min) {
 			margin-bottom: 10px;
 			flex-direction: row;
 			align-items: flex-start;
 		}
+		.search-icon {
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			font-size: 20px;
+			color: #D9D9D9;
+			@media (min-width: $tablet-min) {
+				display: none;
+			}
+		}
+
 		&__icon {
 			padding: 8px;
 			text-align: center;
@@ -63,31 +76,7 @@
 				background-color: $yellow;
 				padding: 10px;
 				font-size: 40px;
-				&:focus,
-				&:active,
-				&:focus-within {
-					font-size: 20px;
-				}
-				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-				  color: $black;
-				  font-size: 40px;
-				  padding-top: 10px;
-				}
-				&::-moz-placeholder { /* Firefox 19+ */
-				  color: $black;
-				  font-size: 40px;
-				  padding-top: 10px;
-				}
-				&:-ms-input-placeholder { /* IE 10+ */
-				  color: $black;
-				  font-size: 40px;
-				  padding-top: 10px;
-				}
-				&:-moz-placeholder { /* Firefox 18- */
-				  color: $black;
-				  font-size: 40px;
-				  padding-top: 10px;
-				}
+				text-transform: uppercase;
 			}
 		}
 
@@ -114,11 +103,11 @@
 			border: none;
 			padding: 15px;
 			height: 50px;
-			margin-bottom: 80px;
+			margin-bottom: 95px;
 			@media (min-width: $tablet-min) {
 				margin: 0 20px 0 0;
 				height: 60px;
-				width: 70%;
+				width: 65%;
 			}
 			@media (min-width: $wideScreen-min) {
 				width: 75%;
@@ -202,5 +191,68 @@
 			}
 		}
 	}
+
+	//startmobile account
+		.lift-up {
+			padding: 10px;
+			background: $red;
+			height: 20px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transition: .5s;
+			color: $white;
+			z-index: 2;
+			@media (min-width: $tablet-min) {
+				display: none;
+			}
+			&_active {
+				height: 280px;
+				.lift-up__btn {
+					i {
+						transform: rotate(180deg);
+					}
+				}
+			}
+
+			&__lable {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -70px;
+				margin: 0 auto;
+				width: 90px;
+				transform: rotate(-13deg);
+				img {
+
+				}
+				span {
+					font-family: $secondaryFont;
+					font-size: 18px;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+
+			&__btn {
+				width: 70px;
+				height: 70px;
+				border-radius: 70%;
+				background: linear-gradient(to bottom, $red 50%, transparent 50%);
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				top: -25px;
+				text-align: center;
+				padding-top: 6px;
+				i {
+					font-size: 19px;
+				}
+			}
+		}
+		//end mobile account
 
 }

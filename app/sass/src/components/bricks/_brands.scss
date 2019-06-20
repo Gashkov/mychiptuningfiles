@@ -9,13 +9,13 @@
 		padding: 40px;
 	}
 	@media (min-width: $wideScreen-min) {
-		padding: 40px 80px;
+		padding: 40px 80px 40px 40px;
 		align-items: stretch;
 	}
 	&__text {
 		padding-right: 10px;
 		@media (min-width: $desktop-min) {
-			width: 23.3%;
+			width: 30%;
 		}
 		@media (min-width: $wideScreen-min) {
 			padding-right: 50px;
@@ -28,6 +28,8 @@
 			@media (min-width: $desktop-min) {
 				text-align: right;
 				margin: 0;
+			}
+			@media (min-width: $wideScreen-min) {
 				font-size: 40px;
 			}
 			span {
@@ -40,7 +42,7 @@
 		display: flex;
 		list-style-type: none;
 		@media (min-width: $desktop-min) {
-			width: 76.7%;
+			width: 70%;
 		}
 	}
 
