@@ -18,10 +18,13 @@
 		padding: 0 15px;
 		margin-bottom: 30px;
 		li {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			display: flex;
 			align-items: center;
 			text-align: left;
+			background: #F8F8F8;
+			border-radius: 5px;
+			padding: 5px 15px;
 			i {
 				color: $green;
 				font-size: 18px;

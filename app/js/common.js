@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     //mobile menu
     $('.menu-btn').on('click', function() {
-     	$('.menu').addClass('is-active');
+     	$('.menu').addClass('is-active').animate({width:'left'}, 300);;
     });
 
     $('.menu__close').on('click', function() {
@@ -31,7 +31,9 @@ $(document).ready(function() {
     checkScreenSize();
 
     function checkScreenSize() {
+     	
      	var newWindowWidth = $(window).width();
+     	
      	if (newWindowWidth < 481) {
      		$('.logo').on('click', function() {
 		     	function stopDefAction(evt) {
@@ -39,7 +41,14 @@ $(document).ready(function() {
 		     	}
 		     	$('.sub-nav').addClass('is-active');
 		    });
-     	} 
+     	}
+
+     	//dynamic placeholder for search field
+     	if ($(window).width() < 400 ) {
+		    $(".search__field").attr("placeholder","Begin hier met zoeken");
+		}
+		else { $(".search__field").attr("placeholder","U kunt hier zoeken naar alle voertuigen, nieuws en dealer pakketten");}
+
     }
 
      //account lift-up
