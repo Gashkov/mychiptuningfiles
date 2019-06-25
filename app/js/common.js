@@ -43,8 +43,8 @@ $(document).ready(function() {
 		    });
      	}
 
-     	//dynamic placeholder for search field
-     	if ($(window).width() < 400 ) {
+    //dynamic placeholder for search field
+     	if ($(window).width() < 768 ) {
 		    $(".search__field").attr("placeholder","Begin hier met zoeken");
 		}
 		else { $(".search__field").attr("placeholder","U kunt hier zoeken naar alle voertuigen, nieuws en dealer pakketten");}

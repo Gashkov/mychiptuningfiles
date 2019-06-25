@@ -140,10 +140,13 @@
 		background-color: $primaryColor;
 		border-radius: 5px;
 		text-align: center;
-		min-width: 340px;
+		min-width: 300px;
 		height: 50px;
 		display: flex;
 		justify-content: space-between;
+		@media (min-width: $tablet-min) {
+			min-width: 340px;
+		}
 		&:hover {
 			background-color: $darkGray;
 			.microblog-video__icon {
@@ -184,6 +187,37 @@
 			font-weight: 400;
 			&.red {
 				color: $red;
+			}
+		}
+	}
+}
+
+.video-wrap {
+	&_red {
+		background: $red;
+		padding: 25px 0;
+		.microblog-video {
+			margin: 0;
+			padding: 0;
+			background: none;
+			border: none;
+			&__text {
+				color: $white;
+				span {
+					color: $white;
+				}
+			}
+			&__btn {
+				background: $green;
+				&:hover {
+					background: $darkGreen;
+					.microblog-video__icon {
+						background: $green;
+					}
+				} 
+			}
+			&__icon {
+				background: $darkGreen;
 			}
 		}
 	}

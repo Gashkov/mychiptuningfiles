@@ -8,7 +8,8 @@ $mobile-min: 480px;
 $tablet-min: 768px;
 $desktop-min: 992px;
 $wideScreen-min: 1366px;
-
+$retina: -webkit-min-device-pixel-ratio;
+$retinaDpi: 192dpi;
 //==========================
 // Color Overrides
 //==========================
