@@ -221,13 +221,20 @@
 	}//end mobile account
 
 	&_v2 {
-		background-image: url('../../../img/header-v2.jpg');
+		background-image: url('../../../img/merken-hero_bg-mobile.jpg');
+		@media (min-width: $tablet-min) {
+			background-image: url('../../../img/header-v2.jpg');
+		}
 		.header {
 			margin-bottom: 60px;
 		}
 		.wrap-search {
 			background: rgba(0, 0, 0, .4);
 			padding: 20px 0;
+			display: none;
+			@media (min-width: $tablet-min) {
+				display: block;
+			}
 		}
 		.search {
 			@media (min-width: $tablet-min) {
@@ -236,6 +243,9 @@
 		}
 		h1 {
 			margin-bottom: 30px;
+		}
+		.lift-up {
+			display: none;
 		}
 	}//end .hero_v2
 }

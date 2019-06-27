@@ -196,6 +196,10 @@
 	&_red {
 		background: $red;
 		padding: 25px 0;
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
 		.microblog-video {
 			margin: 0;
 			padding: 0;

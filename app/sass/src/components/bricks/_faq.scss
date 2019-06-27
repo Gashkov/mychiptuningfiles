@@ -1,5 +1,9 @@
 .faq {
 	padding: $brick-padding;
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
 	h3 {
 		font-weight: $extralightFont;
 		text-align: center;
@@ -7,6 +11,7 @@
 	}
 
 	&__accordion {
+		margin-bottom: 30px;
 		.card {
 			margin-bottom: 10px;
 			border: none;
@@ -25,7 +30,6 @@
 				padding: 0;
 				border: none;
 				font-size: 22px;
-				color: $primaryColor;
 				display: block;
 				width: 100%;
 				text-align: left;
@@ -49,15 +53,25 @@
 		right: 25px;
 		top: 16px;
 		font-size: 22px;
-		color: #9e9e9e;
+		color: $red;
 		transform: rotate(180deg);
 		transition: .3s;
+
 	}
 
 	&__btn {
+		color: $red;
+		&:hover {
+			color: $red;
+		}
 		&.collapsed {
+			color: $primaryColor;
+			&:hover {
+				color: #9e9e9e;
+			}
 			.faq__item-arrow {
 				transform: rotate(0);
+				color: #9e9e9e;
 			}
 		}
 	}
@@ -65,5 +79,28 @@
 	.card-body {
 		font-size: 20px;
 		line-height: 25px;
+		margin: 10px 0 0 96px;
+		background: #F2F2F2;
+		border-radius: 5px;
+		padding: 15px 30px;
+		font-size: 16px;
+	}
+
+	&__cta {
+		text-align: center;
+		padding: 15px;
+		max-width: 570px;
+		width: 100%;
+		background: $red;
+		border-radius: 5px;
+		display: block;
+		margin: 0 auto;
+		font-size: 18px;
+		&:hover {
+			background: $darkRed;
+		}
+		@media (min-width: $tablet-min) {
+			font-size: 22px;
+		}
 	}
 }

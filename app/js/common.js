@@ -34,26 +34,36 @@ $(document).ready(function() {
      	
      	var newWindowWidth = $(window).width();
      	
-     	if (newWindowWidth < 481) {
+     	if (newWindowWidth < 767) {
      		$('.logo').on('click', function() {
 		     	function stopDefAction(evt) {
 		     		evt.preventDefault();
 		     	}
 		     	$('.sub-nav').addClass('is-active');
 		    });
+
+		    //merken dropdown
+		    $('.dropdown-title').on('click', function() {
+		    	$(this).toggleClass('dropdown-title_active');
+		    });
+		    
      	}
 
-    //dynamic placeholder for search field
+    	//dynamic placeholder for search field
      	if ($(window).width() < 768 ) {
 		    $(".search__field").attr("placeholder","Begin hier met zoeken");
 		}
 		else { $(".search__field").attr("placeholder","U kunt hier zoeken naar alle voertuigen, nieuws en dealer pakketten");}
 
+		
     }
 
      //account lift-up
     $('.lift-up__btn').on('click', function() {
      	$('.lift-up').toggleClass('lift-up_active');
     });
+
+
+
 
 });
