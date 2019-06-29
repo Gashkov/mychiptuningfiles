@@ -84,12 +84,12 @@ img {
 			background-color: $primaryColor;
 		}
 	}
-	&_left {
-		.cta-icon__icon {
-			border-radius: 4px 0 0 4px;
-		}
-	}
 	&_green {
+		&:hover {
+			.cta-icon__icon {
+				background-color: $green;
+			}
+		}
 		.cta-icon__icon {
 			border-radius: 4px 0 0 4px;
 			background: $darkGreen;
@@ -107,6 +107,19 @@ img {
 	}
 	&__text {
 		padding: 14.5px 30px;
+	}
+	&_left {
+		.cta-icon__icon {
+			border-radius: 4px 0 0 4px;
+		}
+	}
+	&_right {
+		.cta-icon__icon {
+			border-radius: 0 4px 4px 0;
+		}
+		.cta-icon__text {
+			border-radius: 4px 0 0 4px;
+		}
 	}
 
 	&__icon {

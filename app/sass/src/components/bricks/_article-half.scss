@@ -1,0 +1,30 @@
+.article-half {
+	padding: $brick-padding;
+	background: url('../../../../img/article-half_bg.png') no-repeat;
+	background-color: $white;
+	@media (min-width: $desktop-min) {
+		background-position: 250% 50%;
+	}
+	@media (min-width: $wideScreen-min) {
+		background-position: 150% 50%;
+	}
+	@media (min-width: 1680px) {
+		background-position: 100% 50%;
+	}
+	h3 {
+		font-weight: 400;
+		margin-bottom: 20px;
+		span {
+			color: $red;
+			font-weight: $semiboldFont;
+		}
+	}
+	p {
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 30px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

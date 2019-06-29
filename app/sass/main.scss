@@ -1,3 +1,7 @@
+ //fonts-import
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700&display=swap');
+
 //default imports
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -27,3 +31,8 @@
 @import 'src/components/bricks/faq';
 @import 'src/components/bricks/recent-files';
 @import 'src/components/bricks/choose-model';
+
+//auto-details-tune page
+@import 'src/components/bricks/car-represent';
+@import 'src/components/bricks/cta';
+@import 'src/components/bricks/article-half';

@@ -1,0 +1,156 @@
+.car-represent {
+	position: relative;
+	padding-bottom: 80px;
+	background-color: #f5f5f5;
+	&__titles {
+		margin-bottom: 35px;
+		color: $white;
+		margin-top: -183px;
+		span {
+			font-size: 16px;
+			font-weight: 400px;
+		}
+		h1 {
+			font-size: 50px;
+			font-weight: $semiboldFont;
+			margin: 0;
+			line-height: 36px;
+		}
+		p {
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	&__img {
+		text-align: right;
+		position: absolute;
+		right: 0;
+		top: -210px;
+		width: 100%;
+		img {
+			width: 60%;
+		}
+	}
+
+	&__param {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 35px;
+	}
+
+	&__box {
+		border-radius: 5px;
+		color: $white;
+		background: $red;
+		text-align: center;
+		margin-right: 10px;
+		width: 180px;
+		h3 {
+			margin: 0;
+			line-height: 36px;
+			padding: 15px;
+			font-size: 30px;
+			font-weight: $boldFont;
+		}
+		p {
+			padding: 10px;
+			background: $darkRed;
+			border-radius: 0 0 5px 5px;
+			font-size: 20px;
+			font-weight: $boldFont;
+		}
+	}
+	&__note {
+		width: 100%;
+		font-style: italic;
+		font-size: 13px;
+	}
+
+	&__cta {
+		border-bottom: 1px solid #D3D3D3;
+		position: relative;
+		z-index: 1;
+		margin-bottom: 80px;
+		a {
+			margin-bottom: 10px;
+			&:hover .cta-icon__icon {
+				background-color: $green;
+			}
+			i {
+				font-size: 18px;
+			}
+		} 
+	}
+
+	&__data {
+
+	}
+
+	&__list {
+		padding-top: 70px;
+		li {
+			display: flex;
+			justify-content: space-between;
+			padding: 12px 0;
+			border-bottom: 1px solid #E8E8E8;
+			&:last-child {
+				border: none;
+			}
+			span {
+				font-size: 20px;
+			}
+			i {
+				color: #C2C2C2;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__tile {
+		text-align: center;
+		background-color: $white;
+		border-radius: 5px;
+		box-shadow: 4px 21px 35px -17px rgba(0, 0, 0, 0.4);
+		.tile-header {
+			font-size: 18px;
+			font-weight: $semiboldFont;
+			padding: 10px;
+			background: $primaryColor;
+			color: $white;
+			border-radius: 5px 5px 0 0;
+			&_red {
+				background-color: $red;
+			}
+			&_darkred {
+				background-color: $darkRed;
+			}
+		}
+		.tile-list {
+			padding: 20px 10px;
+		}
+		.tile-item {
+			padding: 12px 0;
+			border-bottom: 1px solid #ECECEC;
+			font-size: 20px;
+			position: relative;
+			&:last-child {
+				border: none;
+			}
+			&__plus {
+				color: $white;
+				display: inline-block;
+				background-color: $red;
+				border-radius: 6px;
+				padding: 2px 5px;
+				font-size: 13px;
+				font-weight: $semiboldFont;
+				position: absolute;
+				right: 0;
+				top: 15px;
+			}
+		}
+	}
+
+
+}

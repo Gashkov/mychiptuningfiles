@@ -248,4 +248,12 @@
 			display: none;
 		}
 	}//end .hero_v2
+
+	&_v3 {
+		background-image: url('../../../img/header-aston-martin.jpg');
+		.header {
+			margin: 0;
+			padding-bottom: 200px;
+		}
+	}
 }

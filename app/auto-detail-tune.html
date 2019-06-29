@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="default">
-		<div class="hero hero_v2">
+		<div class="hero hero_v3">
 			<header class="header">
 				<div class="header__top">
 					<div class="header__rating">
@@ -245,39 +245,6 @@
 					</nav>
 				</div>
 			</header><!--end header-->
-		
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col">
-						<h1 class="hero__title"><span>MERKEN</span></h1>
-					</div>
-				</div>
-			</div>
-			<div class="wrap-search">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col">
-							<form class="search" action="">
-								<input class="search__field" type="text" placeholder="U kunt hier zoeken naar alle voertuigen, nieuws en dealer pakketten">
-								<button class="search-icon">
-									<i class="fas fa-search"></i>
-								</button>
-								<div class="search__btn">
-									<div class="search__btn-icon">
-										<span>Zoek op kenteken</span>
-										<img src="img/arrow-right.svg" alt="arrow">
-									</div>
-									<div class="search__icon">
-										<img src="img/europe_icon.svg" alt="europe icon">
-										NL
-									</div>
-									<input class="search__btn" maxlength="9" type="text">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
 			
 			<div class="lift-up">
 					<div class="lift-up__lable">
@@ -289,6 +256,243 @@
 					</div>
 			</div>
 		</div><!--end hero-->
+
+		<div class="car-represent">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="car-represent__titles">
+							<span>CHIPTUNING</span>
+							<h1>ASTON MARTIN DBS</h1>
+							<p>5.2 V8 TWINTURBO SUPERLEGGERA 725HP</p>
+						</div>
+						<div class="car-represent__img">
+							<img src="img/aston-martin-png--2250.svg" alt="car">
+						</div>
+						<div class="car-represent__param">
+							<div class="car-represent__box">
+								<h3>+60 PK</h3>
+								<p>785 PK</p>
+							</div>
+							<div class="car-represent__box">
+								<h3>+90 Nm</h3>
+								<p>570 Nm</p>
+							</div>
+							<p class="car-represent__note">Resultaten op basis van stage 1 chiptuning</p>
+						</div>
+						<div class="car-represent__cta">
+							<a href="#" class="cta-icon cta-icon_left cta-icon_green">
+								<span class="cta-icon__icon">
+									<i class="fas fa-shopping-basket"></i>
+								</span>
+								<span class="cta-icon__text">Chiptuning file direct bestellen</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="car-represent__data">
+					<div class="row">
+						<div class="col-md-3">
+							<ul class="car-represent__list">
+								<li>
+									<span>Vermogen pk</span>
+									<span data-toggle="tooltip" data-placement="top" title="Tooltip on top Tooltip on top Tooltip on top">
+										<i class="fas fa-info-circle"></i>
+									</span>
+								</li>
+								<li>
+									<span>Koppel / trekkracht</span>
+									<span data-toggle="tooltip" data-placement="top" title="Tooltip on top Tooltip on top Tooltip on top">
+										<i class="fas fa-info-circle"></i>
+									</span>
+								</li>
+								<li>
+									<span>Vermogen kW </span>
+									<span data-toggle="tooltip" data-placement="top" title="Tooltip on top Tooltip on top Tooltip on top">
+										<i class="fas fa-info-circle"></i>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<div class="car-represent__tile">
+								<h4 class="tile-header">Standaard</h4>
+								<ul class="tile-list">
+									<li class="tile-item">725 pk</li>
+									<li class="tile-item">480 Nm</li>
+									<li class="tile-item">533 kW</li>
+								</ul>
+							</div>	
+						</div>
+						<div class="col-md-3">
+							<div class="car-represent__tile">
+								<h4 class="tile-header tile-header_red">STAGE 1</h4>
+								<ul class="tile-list">
+									<li class="tile-item">785 pk <span class="tile-item__plus">+60 pk</span></li>
+									<li class="tile-item">570 Nm <span class="tile-item__plus">+90 Nm</span></li>
+									<li class="tile-item">568 kW <span class="tile-item__plus">+33 kW</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="car-represent__tile">
+								<h4 class="tile-header tile-header_darkred">STAGE 2</h4>
+								<ul class="tile-list">
+									<li class="tile-item">825 pk <span class="tile-item__plus">+90 pk</span></li>
+									<li class="tile-item">595 Nm <span class="tile-item__plus">+115 Nm</span></li>
+									<li class="tile-item">589 kW <span class="tile-item__plus">+56 kW</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--end car-represent-->
+
+		<!--cta brick-->
+		<div class="cta">
+			<div class="cta-desktop">
+				<div class="container">
+					<div class="row">
+						<div class="col-4">
+							<div class="cta-desktop__label">
+								<p>
+									<strong>Ben je particulier?</strong>
+									Wilt u meer rijplezier en besparen 
+									op uw brandstofkosten?
+								</p>
+								<img src="img/arrow-lg.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="cta-desktop__btn">
+								<a href="#" class="cta-icon cta-icon_left cta-icon_green" data-toggle="modal" data-target="#ctaModal">
+									<span class="cta-icon__icon">
+										<i class="far fa-calendar-check"></i>
+									</span>
+									<span class="cta-icon__text">Gratis account aanmaken</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="cta-desktop__text">
+								<p>Met onze <strong>dealer locator</strong> kun je contact opnemen of een afspraak maken met een dealer bij jou in de buurt!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal CTA-->
+			<div class="modal cta-modal fade" id="ctaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			  	<div class="first-step">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Vind een dealer bij jou in de buurt!</h5>
+				      </div>
+				      <div class="modal-body">
+				        <input type="text" placeholder="Vul je woonplaats of postcode in" class="modal-input">
+				        <ul class="dealer-list">
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Baarn</span>
+				        		<div class="dealer-distance">0.9 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Bunschoten</span>
+				        		<div class="dealer-distance">1.2 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Amersfoort</span>
+				        		<div class="dealer-distance">2.0 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Soest</span>
+				        		<div class="dealer-distance">2.9 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Nijkerk</span>
+				        		<div class="dealer-distance">5.3 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Hilversum</span>
+				        		<div class="dealer-distance">9.0 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        	<li class="dealer-item">
+				        		<span class="dealer-name">Harderwijk</span>
+				        		<div class="dealer-distance">10.5 km </div>
+				        		<i class="fas fa-angle-right"></i>
+				        	</li>
+				        </ul>
+				      </div>
+				    </div>
+			  	</div><!--end first step-->
+			  	<div class="second-step">
+			  		<div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Amersfoort</h5>
+				      </div>
+				      <div class="back" id="back-first"><i class="fas fa-chevron-circle-left"></i> Terug</div>
+				      <div class="modal-body">
+								<div class="dealer-contact">
+									<p>Je kunt via onderstaande opties contact opnemen met onze dealer</p>
+									<div class="dealer-contact__address">Amalialaan 126A, 3743 KJ Amersfoort</div>
+									<div class="dealer-contact__links">
+										<a href="whatsapp://send?text=Hello&phone=+31885749876&abid=+31885749876">
+											<span class="dealer-contact__icon dealer-contact__icon_whatsapp"><i class="fab fa-whatsapp"></i></span>
+											<span>WhatsApp</span>
+										</a>
+										<a href="tel:+31885749876">
+											<span class="dealer-contact__icon dealer-contact__icon_phone"><i class="fas fa-phone"></i></span>
+											<span>+31 88 574 98 76</span>
+										</a>
+										<a class="dealer-mail" href="mailto:">
+											<span class="dealer-contact__icon dealer-contact__icon_mail"><i class="fas fa-envelope"></i></span>
+											<span>E-mail sturen</span>
+										</a>
+									</div>
+								</div>
+				      </div>
+				    </div>
+			  	</div><!--end second step-->
+			  	<div class="third-step">
+			  		<div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Amersfoort</h5>
+				      </div>
+				      <div class="back" id="back-second"><i class="fas fa-chevron-circle-left"></i> Terug</div>
+				      <div class="modal-body">
+								<form class="dealer-form">
+									<p>E-mail sturen naar <strong>Amersfoort</strong></p>
+									<div class="dealer-form__row">
+										<input type="text" placeholder="Voornaam">
+										<input type="text" placeholder="Achternaam">
+									</div>
+									<input type="text" placeholder="E-mailadres">
+									<input type="text" value="Chiptuning Aston Martin DBS - 2016 [KM-468-M]">
+									<textarea name="" id="" placeholder="Opmerking / vraag"></textarea>
+									<div class="text-right">
+										<a href="#" class="cta-icon cta-icon_right cta-icon_green">
+											<span class="cta-icon__text">Versturen</span>
+											<span class="cta-icon__icon">
+												<i class="fas fa-chevron-right"></i>
+											</span>
+										</a>
+									</div>
+									</div>
+								</form>
+				      </div>
+				    </div>
+			  	</div><!--end third step-->
+			  </div>
+			</div>
+		</div>
+		<!--end cta brick-->
 		
 		<div class="usp usp_separate">
 			<div class="container-fluid">
@@ -333,7 +537,21 @@
 			</div>
 		</div><!--end usp-->
 
-		<div class="faq">
+		<div class="article-half">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<h3>HET <span>PROCES</span> EN DE <span>VOORDELEN</span></h3>
+						<p>Door uw voertuig te analyseren kunnen wij het programma van het motormanagement, ook ECU (Engine Control Unit)genoemd, optimaal voor u afstellen. Deze motorsoftware bepaalt grotendeels het gedrag van de Aston Martin DBS 5.2 V8 Twinturbo Superleggera 725hp motor en het verbruik. Wij kunnen de motorsoftware voor elke personenauto, bestelwagen, vrachtwagen of tractor op maat instellen.</p>
+						<p>
+							Het resultaat van de tuning met onze aangepaste bestanden is meer vermogen van de Aston Martin DBS 5.2 V8 Twinturbo Superleggera 725hp motor, een vlakkere koppelkromme, minder brandstofverbruik, meer koppel in de lagere toeren en een betere reactie van het gaspedaal. Door optimalisatie van de koppelcurve krijgt de Aston Martin DBS 5.2 V8 Twinturbo Superleggera 725hp motor een soepelere acceleratie met meer koppel in lagere toeren. Doordat er met lagere toeren eerder geschakeld kan worden draait de Aston Martin DBS 5.2 V8 Twinturbo Superleggera 725hp motor minder toeren en loopt dus efficiënter.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq faq_gray">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col">
@@ -446,6 +664,20 @@
 				</div>
 			</div>
 		</div><!--end faq-->
+
+		<div class="advice">
+		    <div class="advice__container">
+		        <div class="advice__content">
+		            <p>Wilt u graag</p>
+		            <h3>PERSOONLIJK ADVIES?</h3>
+		            <p>Heeft u vragen over de mogelijkheden voor uw auto? Wilt u dealer worden of heeft u vragen over onze tools? Stel ze gerust, we staan voor u klaar!</p>
+		        </div>
+		        <div class="advice__banner">
+		            <img src="img/advice-home_img.png" alt="people">
+		        </div>
+		    </div>
+		</div>
+		<!--End advice-->
 
 		<footer class="footer">
 			<div class="footer__top">

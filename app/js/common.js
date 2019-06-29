@@ -46,7 +46,7 @@ $(document).ready(function() {
 		    $('.dropdown-title').on('click', function() {
 		    	$(this).toggleClass('dropdown-title_active');
 		    });
-		    
+
      	}
 
     	//dynamic placeholder for search field
@@ -63,7 +63,28 @@ $(document).ready(function() {
      	$('.lift-up').toggleClass('lift-up_active');
     });
 
+    //dealer modal steps
+    var dealerStepFirst = $('.first-step');
+    var dealerStepSecond = $('.second-step');
+    var dealerStepThird = $('.third-step');
 
+    $('.dealer-item').on('click', function() {
+    	dealerStepFirst.css('display', 'none');
+    	$('.second-step').css('display', 'block');
+    })
+    $('.dealer-mail').on('click', function(e) {
+    	e.preventDefault();
+    	dealerStepSecond.css('display', 'none');
+    	dealerStepThird.css('display', 'block');
+    });
+    $('#back-first').on('click', function() {
+    	dealerStepFirst.css('display', 'block');
+    	dealerStepSecond.css('display', 'none');
+    });
+    $('#back-second').on('click', function() {
+    	dealerStepSecond.css('display', 'block');
+    	dealerStepThird.css('display', 'none');
+    });
 
 
 });
