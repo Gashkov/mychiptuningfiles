@@ -1,22 +1,31 @@
 .article-half {
-	padding: $brick-padding;
-	background: url('../../../../img/article-half_bg.png') no-repeat;
-	background-color: $white;
+	padding: 20px 0;
+	background-image: none;
+	background-color: $red;
+	color: $white;
 	@media (min-width: $desktop-min) {
+		background-color: $white;
+		color: $primaryColor;
+		padding: $brick-padding;
+	}
+	@media (min-width: 1200px) {
+		background: url('../../../../img/article-half_bg.png') no-repeat;
 		background-position: 250% 50%;
 	}
 	@media (min-width: $wideScreen-min) {
 		background-position: 150% 50%;
 	}
 	@media (min-width: 1680px) {
-		background-position: 100% 50%;
+		background-position: 120% 50%;
 	}
 	h3 {
 		font-weight: 400;
 		margin-bottom: 20px;
 		span {
-			color: $red;
 			font-weight: $semiboldFont;
+			@media (min-width: $desktop-min) {
+				color: $red;
+			}
 		}
 	}
 	p {

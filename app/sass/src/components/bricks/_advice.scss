@@ -80,3 +80,10 @@
 		}
 	}
 }
+
+.auto-detail-tune .advice {
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
+}

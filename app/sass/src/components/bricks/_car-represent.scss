@@ -1,42 +1,73 @@
 .car-represent {
 	position: relative;
-	padding-bottom: 80px;
-	background-color: #f5f5f5;
+	padding-bottom: 40px;
+	@media (min-width: $desktop-min) {
+		background-color: #f5f5f5;
+		padding-bottom: 80px;
+	}
 	&__titles {
-		margin-bottom: 35px;
-		color: $white;
+		margin-bottom: 15px;
 		margin-top: -183px;
+		color: $white;
+		border-top: 1px solid rgba(255, 255, 255, .3);
+		padding-top: 15px;
+		@media (min-width: $desktop-min) {
+			border: none;
+			padding: 0;
+			margin-bottom: 35px;
+		}
 		span {
 			font-size: 16px;
 			font-weight: 400px;
 		}
 		h1 {
-			font-size: 50px;
+			font-size: 24px;
 			font-weight: $semiboldFont;
-			margin: 0;
-			line-height: 36px;
+			margin: 0;			
+			@media (min-width: $desktop-min) {
+				font-size: 50px;
+				line-height: 36px;
+			}
 		}
 		p {
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: 400;
+			@media (min-width: $desktop-min) {
+				font-size: 20px;
+			}
 		}
 	}
 
 	&__img {
 		text-align: right;
-		position: absolute;
-		right: 0;
-		top: -210px;
-		width: 100%;
+		
+		@media (min-width: $desktop-min) {
+			position: absolute;
+			right: 0;
+			top: -210px;
+			width: 100%;
+		}
 		img {
-			width: 60%;
+			width: 100%;
+			margin-top: -38px;
+			@media (min-width: $desktop-min) {
+				width: 60%;
+				margin: 0;
+			}
 		}
 	}
 
 	&__param {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 35px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #D3D3D3;
+		padding-bottom: 15px;
+		@media (min-width: $tablet-min) {
+			padding: 0;
+			margin-bottom: 35px;
+			border: none;
+		}
 	}
 
 	&__box {
@@ -45,13 +76,22 @@
 		background: $red;
 		text-align: center;
 		margin-right: 10px;
-		width: 180px;
+		width: calc(50% - 10px);
+		margin-bottom: 10px;
+		@media (min-width: $tablet-min) {
+			max-width: 180px;
+			width: 100%;
+			margin-bottom: 0;
+		}
 		h3 {
 			margin: 0;
 			line-height: 36px;
-			padding: 15px;
+			padding: 5px 15px;
 			font-size: 30px;
 			font-weight: $boldFont;
+			@media (min-width: $tablet-min) {
+				padding: 15px;
+			}
 		}
 		p {
 			padding: 10px;
@@ -68,10 +108,13 @@
 	}
 
 	&__cta {
-		border-bottom: 1px solid #D3D3D3;
 		position: relative;
 		z-index: 1;
-		margin-bottom: 80px;
+		margin-bottom: 20px;
+		@media (min-width: $desktop-min) {
+			margin-bottom: 80px;
+			border-bottom: 1px solid #D3D3D3;
+		}
 		a {
 			margin-bottom: 10px;
 			&:hover .cta-icon__icon {
@@ -81,6 +124,21 @@
 				font-size: 18px;
 			}
 		} 
+		.cta-icon {
+			width: 100%;
+			@media (min-width: $tablet-min) {
+				width: auto;
+			}
+		}
+		.cta-icon__text {
+			padding: 14.5px 10px;
+			width: calc(100% - 50px);
+			text-align: center;
+			@media (min-width: $tablet-min) {
+				width: auto;
+				padding: 14.5px 20px;
+			}
+		}
 	}
 
 	&__data {
@@ -88,7 +146,11 @@
 	}
 
 	&__list {
-		padding-top: 70px;
+		display: none;
+		@media (min-width: $desktop-min) {
+			display: block;
+			padding-top: 70px;
+		}
 		li {
 			display: flex;
 			justify-content: space-between;
@@ -109,9 +171,14 @@
 
 	&__tile {
 		text-align: center;
-		background-color: $white;
+		background-color: #f5f5f5;
 		border-radius: 5px;
-		box-shadow: 4px 21px 35px -17px rgba(0, 0, 0, 0.4);
+		margin-bottom: 10px;
+		@media (min-width: $tablet-min) {
+			background-color: $white;
+			box-shadow: 4px 21px 35px -17px rgba(0, 0, 0, 0.4);
+			margin: 0;
+		}
 		.tile-header {
 			font-size: 18px;
 			font-weight: $semiboldFont;
@@ -119,6 +186,7 @@
 			background: $primaryColor;
 			color: $white;
 			border-radius: 5px 5px 0 0;
+			margin: 0;
 			&_red {
 				background-color: $red;
 			}
@@ -127,13 +195,23 @@
 			}
 		}
 		.tile-list {
-			padding: 20px 10px;
+			padding: 10px 25px;
+			display: flex;
+			justify-content: space-between;
+			border: 1px solid #EFEFEF;
+			border-radius: 0 0 5px 5px;
+			@media (min-width: $tablet-min) {
+				display: block;
+				padding: 20px 10px;
+			}
 		}
 		.tile-item {
-			padding: 12px 0;
-			border-bottom: 1px solid #ECECEC;
 			font-size: 20px;
 			position: relative;
+			@media (min-width: $tablet-min) {
+				border-bottom: 1px solid #ECECEC;
+				padding: 12px 0;
+			}
 			&:last-child {
 				border: none;
 			}
@@ -145,9 +223,13 @@
 				padding: 2px 5px;
 				font-size: 13px;
 				font-weight: $semiboldFont;
-				position: absolute;
-				right: 0;
-				top: 15px;
+				margin-top: 5px;	
+				@media (min-width: $tablet-min) {
+					position: absolute;
+					right: 0;
+					top: 15px;
+					margin: 0;
+				}
 			}
 		}
 	}
