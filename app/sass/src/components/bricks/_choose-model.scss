@@ -47,10 +47,12 @@
 		}
 	}
 	&__dropdown {
+		position: relative;
+	}
+	&__btn {
 		border: 1px solid #E0E0E0;
 		border-radius: 5px;
 		display: flex;
-		position: relative;
 		margin-bottom: 5px;
 		@media (min-width: $tablet-min) {
 			margin-bottom: 20px;
@@ -102,5 +104,85 @@
 			}
 		}
 	}
-
 }
+
+//dropdown list
+
+.dropdown-list {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	color: $white;
+	text-align: center;
+	z-index: 2;
+	background-color: $red;
+	border-radius: 5px;
+	display: none;
+	&__header {
+		background: #8C0012;
+		margin: 0;
+		padding: 10px;
+		font-size: 17px;
+		font-weight: $semiboldFont;
+	}
+	.dealer-list {
+		padding: 10px;
+	}
+	.dealer-item {
+		padding: 7px 10px;
+	}
+	.second-step,
+	.third-step {
+		display: none;
+	}
+}
+
+.dropdown-model {
+	padding: 8px;
+	background-color: #9F0015;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: $semiboldFont;
+	&_all {
+		background-color: #B40017;
+	}
+}
+
+.second-step {
+	.dropdown-list__header {
+		cursor: pointer;
+	}
+}
+
+.dropdown-smart-search {
+	margin-bottom: 5px;
+	input {
+		display: block;
+		width: 100%;
+		background-color: $red;
+		border-radius: 5px;
+		border: 1px solid #D94C5E;
+		padding: 10px 15px;
+		color: $white;
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			font-size: 16px;
+			font-weight: $semiboldFont;
+			color: $white;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			font-size: 16px;
+			font-weight: $semiboldFont;
+			color: $white;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			font-size: 16px;
+			font-weight: $semiboldFont;
+			color: $white;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			font-size: 16px;
+			font-weight: $semiboldFont;
+			color: $white;
+		}
+	}
+}	

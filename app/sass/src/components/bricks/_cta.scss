@@ -105,9 +105,12 @@
 	.modal-dialog {
 		max-width: 550px;
 		width: 100%;
-		margin: 0 auto;
+		margin: 0 20px;
 		box-shadow: 3px 24px 51px -19px rgba(0,0,0,0.6);
 		border-radius: 5px;
+		@media (min-width: $mobile-min) {
+			margin: 0 auto;
+		}
 		.second-step,
 		.third-step {
 			display: none;
@@ -126,15 +129,21 @@
 	}
 	.modal-title {
 		width: 100%;
-		font-size: 25px;
+		font-size: 18px;
 		font-weight: $semiboldFont;
+		@media (min-width: $tablet-min) {
+			font-size: 25px;
+		}
 	}
 	.modal-body {
 		background-color: $red;
 		border-radius: 0 0 4px 4px;
 		color: $white;
-		padding: 40px;
+		padding: 20px;
 		text-align: center;
+		@media (min-width: $tablet-min) {
+			padding: 40px;
+		}
 		p {
 			font-size: 20px;
 			font-weight: 400;
@@ -144,75 +153,52 @@
 		textarea {
 			color: $primaryColor;
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-				font-size: 20px;
+				font-size: 16px;
 				color: #9A9A9A;
 			}
 			&::-moz-placeholder { /* Firefox 19+ */
-				font-size: 20px;
+				font-size: 16px;
 				color: #9A9A9A;
 			}
 			&:-ms-input-placeholder { /* IE 10+ */
-				font-size: 20px;
+				font-size: 16px;
 				color: #9A9A9A;
 			}
 			&:-moz-placeholder { /* Firefox 18- */
-				font-size: 20px;
+				font-size: 16px;
 				color: #9A9A9A;
+			}
+			@media (min-width: $mobile-min) {
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					font-size: 20px;
+					color: #9A9A9A;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					font-size: 20px;
+					color: #9A9A9A;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					font-size: 20px;
+					color: #9A9A9A;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					font-size: 20px;
+					color: #9A9A9A;
+				}
 			}
 		}
 	}
 	.modal-input {
-		font-size: 20px;
+		font-size: 16px;
 		display: block;
 		text-align: center;
-		padding: 15px;
+		padding: 8px;
 		width: 100%;
 		display: block;
 		margin-bottom: 20px;
-	}
-	.dealer-item {
-		padding: 10px;
-		border-bottom: 1px solid #D33348;
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		cursor: pointer;
-		&:last-child {
-			border-bottom: none;
-		}
-		.dealer-name {
-			font-weight: $semiboldFont;
-		}
-		.dealer-distance {
-			margin-right: 40px;
-			display: block;
-			padding: 3px 10px;
-			background: $white;
-			color: $red;
-			border-radius: 5px;
-			font-weight: $semiboldFont;
-		}
-		i {
-			position: absolute;
-			top: 35%;
-			right: 20px;
-			font-size: 16px;
-		}
-	}
-
-	.back {
-		padding: 15px 40px;
-		color: $white;
-		font-size: 17px;
-		font-weight: $boldFont;
-		background: $darkRed;
-		display: flex;
-		align-items: center;
-		cursor: pointer;
-		i {
+		@media (min-width: $mobile-min) {
 			font-size: 20px;
-			margin-right: 10px;
+			padding: 15px;
 		}
 	}
 
@@ -272,10 +258,15 @@
 		input,
 		textarea {
 			width: 100%;
-			margin-bottom: 10px;
-			height: 50px;
-			padding: 20px;
+			margin-bottom: 5px;
+			height: 40px;
+			padding: 10px;
 			font-size: 16px;
+			@media (min-width: $mobile-min) {
+				margin-bottom: 10px;
+				padding: 20px;
+				height: 50px;
+			}
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 				font-size: 16px;
 				color: #BABABA;
@@ -299,9 +290,75 @@
 		}
 		&__row {
 			display: flex;
+			flex-wrap: wrap;
+			@media (min-width: $tablet-min) {
+				flex-wrap: nowrap;
+			}
 			input:first-child {
-				margin-right: 15px;
+				@media (min-width: $tablet-min) {
+					margin-right: 15px;
+				}
+			}
+		}
+		.cta-icon__text {
+			padding: 7.5px 30px;
+			@media (min-width: $mobile-min) {
+				padding: 14.5px 30px;
 			}
 		}
 	}
 }
+
+.dealer-item {
+	padding: 10px;
+	border-bottom: 1px solid #D33348;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	&:last-child {
+		border-bottom: none;
+	}
+	.dealer-name {
+		font-weight: $semiboldFont;
+	}
+	.dealer-distance {
+		margin-right: 40px;
+		display: block;
+		padding: 3px 10px;
+		background: $white;
+		color: $red;
+		border-radius: 5px;
+		font-weight: $semiboldFont;
+	}
+	i {
+		position: absolute;
+		top: 35%;
+		right: 20px;
+		font-size: 16px;
+	}
+}
+
+.back {
+	padding: 15px 40px;
+	color: $white;
+	font-size: 17px;
+	font-weight: $boldFont;
+	background: $darkRed;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	i {
+		font-size: 20px;
+		margin-right: 10px;
+	}
+}
+
+// custom styles below
+
+.merken .back {
+	border-radius: 5px 5px 0 0;
+	padding: 15px 20px;
+}
+

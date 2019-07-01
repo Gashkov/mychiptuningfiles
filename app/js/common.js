@@ -68,7 +68,7 @@ $(document).ready(function() {
     var dealerStepSecond = $('.second-step');
     var dealerStepThird = $('.third-step');
 
-    $('.dealer-item').on('click', function() {
+    $('li.dealer-item').on('click', function() {
     	dealerStepFirst.css('display', 'none');
     	$('.second-step').css('display', 'block');
     })
@@ -78,6 +78,7 @@ $(document).ready(function() {
     	dealerStepThird.css('display', 'block');
     });
     $('#back-first').on('click', function() {
+    	$(this).parent().parent('.dropdown-list').css('display', 'none');
     	dealerStepFirst.css('display', 'block');
     	dealerStepSecond.css('display', 'none');
     });
@@ -86,5 +87,27 @@ $(document).ready(function() {
     	dealerStepThird.css('display', 'none');
     });
 
+    //choose-model dropdown
+    $('.choose-model__btn').on('click', function() {
+    	$(this).siblings('.dropdown-list').css('display', 'block');
+    });
+    $('#all-models').on('click', function() {
+    	$('.second-step').css('display', 'none');
+    	$('.third-step').css('display', 'block');
+    });
+    $('.second-step .back-click').on('click', function() {
+    	$('.second-step').css('display', 'none');
+    	$('.first-step').css('display', 'block');
+    });
+    $('.third-step .back-click').on('click', function() {
+    	$('.third-step').css('display', 'none');
+    	$('.second-step').css('display', 'block');
+    });
+    $(document).mouseup(function (e) {
+	    var container = $(".dropdown-list");
+	    if (container.has(e.target).length === 0){
+	        container.hide();
+	    }
+	});
 
 });

@@ -20,7 +20,11 @@
 	}
 	h3 {
 		font-weight: 400;
+		font-size: 30px;
 		margin-bottom: 20px;
+		@media (min-width: $tablet-min) {
+			font-size: 40px;
+		} 
 		span {
 			font-weight: $semiboldFont;
 			@media (min-width: $desktop-min) {
