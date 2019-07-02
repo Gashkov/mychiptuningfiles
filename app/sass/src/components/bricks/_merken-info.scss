@@ -1,0 +1,91 @@
+.merken-info {
+	padding-top: 80px;
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
+	img {
+		margin-bottom: 30px;
+	}
+	h4 {
+		font-size: 20px;
+		font-weight: $semiboldFont;
+		margin-bottom: 30px;
+	}
+	&__assets {
+		h5 {
+			padding: 10px 20px;
+			border: 1px solid #EAEAEA;
+			border-radius: 5px;
+			background: #F8F8F8;
+			font-size: 20px;
+		}
+	}
+	&__brands {
+		padding: 20px 20px 20px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 15px;
+		img {
+			margin: 0 3px 30px 0;
+		}
+	}
+	&__list {
+		li {
+			padding: 10px 15px;
+			border-bottom: 1px solid #EBEBEB;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				font-size: 16px;
+				color: $primaryColor;
+			}
+			i {
+				font-size: 14px;
+				color: $red;
+				margin-right: 15px;
+			}
+		}
+	}
+	&__cta {
+		height: 60px;
+		background-color: $red;
+		border-radius: 5px;
+		width: 100%;
+		color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		.cta-icon {
+			height: 60px;
+			border-radius: 0 5px 5px 0;
+			width: 40%;
+			@media (min-width: $tablet-min) {
+				width: 40%;
+			}
+			@media (min-width: $wideScreen-min) {
+				width: 24%;
+			}
+			&__icon {
+				width: 60px;
+			}
+			&__text {
+				border-radius: 0;
+				width: calc(100% - 60px);
+				white-space: nowrap;
+			}
+		}
+	}
+	&__cta-text {
+		@media (min-width: $tablet-min) {
+			width: 60%;
+		}
+		@media (min-width: $wideScreen-min) {
+			width: 76%;
+		}
+	}
+}

@@ -110,4 +110,12 @@ $(document).ready(function() {
 	    }
 	});
 
+    //check active select
+	$('.custom-select option:eq(0)').prop('selected', true)
+	$(".custom-select").addClass("custom-select_active").on('change', function() {
+		var optionIndex = $(this).find('option:selected').index();
+		$(this).toggleClass('custom-select_active', optionIndex == 0);
+	});
+
+
 });

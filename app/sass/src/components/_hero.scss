@@ -28,6 +28,66 @@
 			flex-direction: row;
 			align-items: flex-start;
 		}
+		&_select {
+			width: 100%;
+			.custom-select {
+				background-image: none;
+				border-radius: 5px 0 0 5px;
+				border: none;
+				cursor: pointer;
+				height: 50px;
+				+ .input-group-append {
+					border-radius: 0 5px 5px 0;
+					.input-group-text {
+						background: $green;
+						border: none;
+						width: 50px;
+						justify-content: center;
+					}
+					i {
+						color: $white;
+						font-size: 18px;
+						&.fa-check {
+							display: block;
+						}
+						&.fa-chevron-down {
+							display: none;
+						}
+					}
+				}
+				&_active {
+					+ .input-group-append {
+							.input-group-text {
+								background-color: #EAEAEA;
+							}
+						i {
+							color: #4b4b4b;
+							&.fa-check {
+								display: none;
+							}
+							&.fa-chevron-down {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+			.input-group-append {
+					background: $green;
+				}
+			.input-group {
+				position: relative;
+				margin: 0;
+			}
+			.select-placeholder {
+				position: absolute;
+				left: 10px;
+				top: 7px;
+				pointer-events: none;
+				z-index: 2;
+			}
+		}//end search_select
+
 		.search-icon {
 			position: absolute;
 			right: 9px;

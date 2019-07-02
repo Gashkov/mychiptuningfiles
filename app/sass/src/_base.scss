@@ -22,8 +22,9 @@ a {
 
 p {
 	font-size: $p-mobile;
-	font-weight: $lightFont;
-	margin: 0;
+	font-weight: 400;
+	line-height: 25px;
+	margin-bottom: 30px;
 	@media (min-width: $tablet-min) {
 		font-size: $p-desktop;
 	}
