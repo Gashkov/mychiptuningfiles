@@ -1,0 +1,39 @@
+.sidebar {
+	&__title {
+		background-color: $primaryColor;
+		color: $white;
+		border-radius: 5px;
+		padding: 18px;
+		font-size: 18px;
+		font-weight: $semiboldFont;
+		margin: 0;
+	}
+	.striped-item {
+		justify-content: space-between;
+		font-weight: $semiboldFont;
+		padding: 10px 18px;
+	}
+	.order-data {
+		justify-content: flex-end;
+	}
+	.credit {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
+.order-total {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 15px 15px 20px;
+	color: $white;
+	background-color: $red;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: $boldFont;
+	margin-bottom: 10px;
+	&__credits {
+		margin-left: 15px;
+	}
+}
