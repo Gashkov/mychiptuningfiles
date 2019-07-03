@@ -82,7 +82,8 @@
 	}
 }
 
-.auto-detail-tune .advice {
+.auto-detail-tune .advice,
+.order-process .advice {
 	display: none;
 	@media (min-width: $tablet-min) {
 		display: block;

@@ -117,5 +117,10 @@ $(document).ready(function() {
 		$(this).toggleClass('custom-select_active', optionIndex == 0);
 	});
 
+	//floating sidebar
+	$('.sidebar-head').on('click', function() {
+		$(this).toggleClass('is-active');
+	});
+
 
 });
