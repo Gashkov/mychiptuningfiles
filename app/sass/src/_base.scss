@@ -79,6 +79,9 @@ img {
 	font-size: 18px;
 	font-weight: $semiboldFont;
 	display: inline-flex;
+	align-items: stretch;
+	color: $white;
+	padding: 0;
 	&:hover {
 		background-color: $darkGray;
 		.cta-icon__icon {
@@ -127,6 +130,14 @@ img {
 		.cta-icon__text {
 			width: calc(100% - 50px);
 			text-align: center;
+		}
+	}
+	&_facebook {
+		.cta-icon__text {
+			background: #4969A8;
+		}
+		.cta-icon__icon {
+			background: #425F98;
 		}
 	}
 

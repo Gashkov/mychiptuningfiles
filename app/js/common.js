@@ -122,5 +122,33 @@ $(document).ready(function() {
 		$(this).toggleClass('is-active');
 	});
 
+	//upload file button
+	$('.my').change(function() {
+	    if ($(this).val() != '') $(this).prev().text('Of kies een bestand: ' + $(this)[0].files.length);
+	    else $(this).prev().text('Of kies een bestand');
+	});
+
+	//form submited
+	$( "#first-step" ).submit(function( event ) {
+	  $('.step-first').addClass('submited').removeAttr('data-toggle');
+	  $('#collapseOne').removeClass('show');
+	  $('#collapseTwo').addClass('show');
+	  $('#headingTwo button').removeClass('collapsed');
+	  event.preventDefault();
+	});
+	$( "#second-step" ).submit(function( event ) {
+	  $('.step-second').addClass('submited').removeAttr('data-toggle');
+	  $('#collapseTwo').removeClass('show');
+	  $('#collapseThree').addClass('show');
+	  $('#headingThree button').removeClass('collapsed');
+	  event.preventDefault();
+	});
+	$( "#third-step" ).submit(function( event ) {
+	  $('.step-third').addClass('submited').removeAttr('data-toggle');
+	  $('#collapseThree').removeClass('show');
+	  $('#collapseFour').addClass('show');
+	  $('#headingFour button').removeClass('collapsed');
+	  event.preventDefault();
+	});
 
 });
