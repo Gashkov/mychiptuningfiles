@@ -338,7 +338,7 @@
 					<div class="col-12">
 						<div class="choose-tuning__login">
 							<div class="login-wrap">
-								<p>Heb je al een account? Klik dan hiernaast om in te loggen.</p>
+								<p>Heb je al een account? <span>Klik dan hiernaast om in te loggen.</span></p>
 								<a href="#" class="cta-icon cta-icon_right" data-toggle="modal" data-target="#sidn-in">
 									<span class="cta-icon__text">Inloggen</span>
 									<span class="cta-icon__icon">
@@ -380,10 +380,10 @@
 				</div>
 				<form action="">
 					<div class="row">
-						<div class="col-4">
+						<div class="col-md-4">
 							<div class="checkout-item">
 								<div class="checkout-item__header">
-									<h5>Adres</h5>
+									<h5><span>1.</span> Adres</h5>
 								</div>
 								<div class="checkout-item__body">
 									<div class="checkout-item__row">
@@ -402,23 +402,29 @@
 										<input type="text" placeholder="Straatnaam + huisnummer">
 									</div>
 									<div class="checkout-item__row">
-										<input type="text" placeholder="xxxx xx">
+										<input class="code-field" type="text" maxlength="7" placeholder="xxxx xx">
 										<input type="text" placeholder="Plaats">
 									</div>
-									<div class="checkout-item__row">
+									<div class="checkout-item__row select-row">
 										<select name="" id="">
 											<option value="">Nederland</option>
 											<option value="">1</option>
 											<option value="">2</option>
 										</select>
-										<div class="checkbox-row">
-											<input type="checkbox">
-											<label for="">Afwijkend afleveradres opgeven</label>
-										</div>
-										<div class="checkbox-row">
-											<input type="checkbox">
-											<label for="">Account aanmaken</label>
-										</div>
+									</div>
+									<div class="checkout-item__row checkout-item__row_border">
+										<label class="label-checkbox-wrap">
+											<input type="checkbox"/>
+											<span class="label-checkbox"></span>
+											Afwijkend afleveradres opgeven
+										</label>
+									</div>
+									<div class="checkout-item__row checkout-item__row_checkbox">
+										<label class="label-checkbox-wrap">
+											<input type="checkbox"/>
+											<span class="label-checkbox"></span>
+											Account aanmaken
+										</label>
 									</div>
 									<div class="checkout-item__row">
 										<input type="text" placeholder="Wachtwoord">
@@ -426,13 +432,52 @@
 									<div class="checkout-item__row">
 										<input type="text" placeholder="Herhaal wachtwoord">
 									</div>
+									<div class="checkout-mobile-cta">
+										<a href="#" class="cta-icon cta-icon_right">
+											<span class="cta-icon__text">Volgende stap</span>
+											<span class="cta-icon__icon">
+												<i class="fas fa-angle-double-right"></i>
+											</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
 							<div class="checkout-item">
 								<div class="checkout-item__header">
-									<h5>Betaalmethode</h5>
+									<h5><span>2.</span> Verzendmethode</h5>
+								</div>
+								<div class="checkout-item__body">
+									<form action="">
+										<div class="checkout-item__row checkout-item__row_radio">
+											<label class="label-checkbox-wrap">
+												<input type="radio" name="shipping" />
+												<span class="label-checkbox"></span>
+												Verzending via PostNL
+											</label>
+										</div>
+										<div class="checkout-item__row checkout-item__row_radio">
+											<label class="label-checkbox-wrap">
+												<input type="radio" name="shipping" />
+												<span class="label-checkbox"></span>
+												Afhalen
+											</label>
+										</div>
+										<div class="checkout-mobile-cta checkout-mobile-cta_border">
+											<a href="#" class="cta-icon cta-icon_right">
+												<span class="cta-icon__text">Volgende stap</span>
+												<span class="cta-icon__icon">
+													<i class="fas fa-angle-double-right"></i>
+												</span>
+											</a>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="checkout-item">
+								<div class="checkout-item__header">
+									<h5><span>3.</span> Betaalmethode</h5>
 								</div>
 								<div class="checkout-item__body">
 									<div class="payment-list">
@@ -479,13 +524,21 @@
 											Bitcoin
 										</a>
 									</div>
+									<div class="checkout-mobile-cta checkout-mobile-cta_border">
+										<a href="#" class="cta-icon cta-icon_right">
+											<span class="cta-icon__text">Volgende stap</span>
+											<span class="cta-icon__icon">
+												<i class="fas fa-angle-double-right"></i>
+											</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>		
-						<div class="col-4">
+						<div class="col-md-4">
 							<div class="checkout-item">
 								<div class="checkout-item__header">
-									<h5>Bestelling</h5>
+									<h5><span>4.</span> Bestelling</h5>
 								</div>
 								<div class="checkout-item__body">
 									<div class="checkout-products">
@@ -510,8 +563,26 @@
 													</a>
 												</div>
 											</div>
+											<div class="checkout-products__item">
+												<div class="checkout-products__img">
+													<img src="img/products/product2.svg" alt="#">
+												</div>
+												<div class="checkout-products__description">
+													<p>5.2 Credits Chiptuningfile</p>
+													<p>1x € 1.000,00</p>
+												</div>
+												<div class="checkout-products__remove">
+													<a href="#">
+														<i class="fas fa-trash-alt"></i>
+													</a>
+												</div>
+											</div>
 										</div>
 										<div class="checkout-products__subtotal">
+											<div class="price-row">
+												<p>Verzendkosten</p>
+												<p class="green-color">Gratis</p>
+											</div>
 											<div class="price-row">
 												<p>Totaal excl. btw</p>
 												<p>€ 390,00</p>
@@ -527,11 +598,17 @@
 												<p>€ 471,90</p>
 											</div>
 										</div>
+
 										<div class="checkout-products__sale">
 											<input type="text" placeholder="Heb je een kortingscode?">
 										</div>
-										<div class="checkout-products__subscribe">
-											
+
+										<div class="checkout-item__row checkout-item__row_checkbox">
+											<label class="label-checkbox-wrap">
+												<input type="checkbox"/>
+												<span class="label-checkbox"></span>
+												Aanmelden voor de nieuwsbrief
+											</label>
 										</div>
 										<div class="checkout-products__buy">
 											<a href="#" class="cta-icon cta-icon_left cta-icon_full cta-icon_green">

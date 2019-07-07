@@ -47,6 +47,12 @@ $(document).ready(function() {
 		    	$(this).toggleClass('dropdown-title_active');
 		    });
 
+		    //checkout mobile accordion
+		    $('.checkout-item__header').on('click', function() {
+		    	$(this).toggleClass('active');
+		    	$(this).next().slideToggle();
+		    })
+
      	}
 
     	//dynamic placeholder for search field
@@ -150,5 +156,6 @@ $(document).ready(function() {
 	  $('#headingFour button').removeClass('collapsed');
 	  event.preventDefault();
 	});
+
 
 });
