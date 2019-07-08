@@ -57,6 +57,9 @@
 		background: $red;
 		z-index: 2;
 		color: $white;
+		&.sidebar {
+			margin: 0;
+		}
 		.sidebar__title {
 			background-color: #960014;
 			border-radius: 0;

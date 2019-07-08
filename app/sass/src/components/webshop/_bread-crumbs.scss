@@ -1,0 +1,26 @@
+.bread-crumbs {
+	padding: 8px 0;
+	background-color: #F8F8F8;
+	display: none;
+	position: relative;
+	z-index: 0;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		font-size: 14px;
+		a {
+			color: $primaryColor;
+		}
+		i {
+			padding: 0 10px;
+		}
+		span {
+			color: #989898;
+		}
+	}
+}

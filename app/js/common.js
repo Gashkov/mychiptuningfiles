@@ -47,8 +47,8 @@ $(document).ready(function() {
 		    	$(this).toggleClass('dropdown-title_active');
 		    });
 
-		    //checkout mobile accordion
-		    $('.checkout-item__header').on('click', function() {
+		    // mobile custom-accordion
+		    $('.custom-accordion').on('click', function() {
 		    	$(this).toggleClass('active');
 		    	$(this).next().slideToggle();
 		    })

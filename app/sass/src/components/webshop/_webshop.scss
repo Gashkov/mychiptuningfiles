@@ -1,0 +1,249 @@
+.webshop {
+	padding: 45px 0;
+	border-bottom: 1px solid #E7E7E7;
+	&__text {
+		h4 {
+			font-size: 24px;
+			font-weight: 400;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #E7E7E7;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__sort {
+		display: none;
+		justify-content: space-between;
+		padding: 10px 0;
+		border-top: 1px solid #E7E7E7;
+		border-bottom: 1px solid #E7E7E7;
+		margin-bottom: 20px;
+		@media (min-width: $tablet-min) {
+			display: flex;
+		}
+	}
+	&__sort-item {
+		display: flex;
+		align-items: center;
+		span {
+			margin-right: 20px;
+		}
+		.input-group {
+			width: auto;
+		}
+		.custom-select {
+			background: #F8F8F8;
+			border: 1px solid #E7E7E7;
+			text-align: center;
+			height: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&.quantity-select {
+				max-width: 60px;
+			}
+			+ .input-group-append .input-group-text {
+				background: $primaryColor;
+				width: 40px;
+				i {
+					color: $white;
+				}
+			}
+		}
+	}
+	.pagination {
+		display: none;
+		justify-content: flex-end;
+		margin-top: 20px;
+		@media (min-width: $tablet-min) {
+			display: flex;
+		}
+		&__list {
+			display: flex;
+		}
+		&__item {
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				display: inline-block;
+				padding: 8px;
+				width: 40px;
+				border-radius: 6px;
+				background-color: #A5A5A5;
+				text-align: center;
+				font-weight: $semiboldFont;
+				&:hover {
+					color: $red;
+				}
+				&.active {
+					background-color: $red;
+					&:hover {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}//end webshop
+
+//sidebar
+.sidebar {
+	margin-bottom: 20px;
+	&__header {
+		padding: 10px 20px;
+		color: $white;
+		background-color: $red;
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: $boldFont;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: .3s;
+		i {
+			transition: .3s;
+		}
+		&.active {
+			background-color: $green;
+			i {
+				transform: rotate(180deg);
+			}
+		}
+		@media (min-width: $tablet-min) {
+			background-color: $primaryColor;
+			border-radius: 5px 5px 0 0;
+		}
+		@media (min-width: $desktop-min) {
+			font-size: 20px;
+		}
+		i {
+			@media (min-width: $tablet-min) {
+				display: none;
+			}
+		}
+	}
+	&__item {
+		margin-bottom: 10px;
+		@media (min-width: $tablet-min) {
+			margin-bottom: 30px;
+		}
+	}
+	&__list {
+		padding: 10px;
+		border-radius: 0 0 5px 5px;
+		background: #F8F8F8;
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
+		li {
+			padding: 5px;
+			border-bottom: 1px solid #E7E7E7;
+			&:last-child {
+				border: none;
+			}
+		}
+		a {
+			color: $primaryColor;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+}
+
+//webshop-products
+.webshop-products {
+	margin-bottom: 30px;
+}
+
+//webshop-card
+.webshop-card {
+	border: 1px solid #E7E7E7;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	@media (min-width: $tablet-min) {
+		margin-bottom: 30px;
+		display: block;
+	}
+	&__img {
+		padding: 0 5px 0 10px;
+		text-align: center;
+		@media (min-width: $tablet-min) {
+			padding: 15px 15px 5px 15px;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 5px 8px 5px 5px;
+		@media (min-width: $tablet-min) {
+			display: block;
+			padding: 0;
+		}
+	}
+	&__name {
+		text-transform: uppercase;
+		font-weight: $semiboldFont;
+		color: $primaryColor;
+		display: block;
+		line-height: 23px;
+		&:hover {
+			color: $red;
+		}
+		@media (min-width: $tablet-min) {
+			font-size: 18px;
+			margin-bottom: 5px;
+			padding: 0 15px;
+		}
+	}
+	&__rating {
+		margin-bottom: 5px;
+		padding: 0;
+		@media (min-width: $tablet-min) {
+			padding: 0 15px;
+		}
+		.stars {
+			i {
+				cursor: pointer;
+				color: #FEC831;
+				font-size: 15px;
+			}
+		}
+	}
+	&__price {
+		display: flex;
+		justify-content: space-between;	
+		border-radius: 0 0 5px 5px;
+		color: $primaryColor;
+		font-weight: $semiboldFont;
+		@media (min-width: $tablet-min) {
+			background-color: #F8F8F8;
+		}
+		&:hover {
+			color: $red;
+		}
+	}
+	&__price-value {
+		@media (min-width: $tablet-min) {
+			padding: 10px 10px 10px 20px;
+		}
+	}
+	&__price-icon {
+		background-color: $green;
+		color: white;
+		font-size: 20px;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		border-radius: 0 0 5px 0;
+		@media (min-width: $tablet-min) {
+			display: flex;
+		}
+	}
+}

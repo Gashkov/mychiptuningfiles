@@ -103,6 +103,7 @@
 	&__bottom {
 		padding: 20px 0;
 		p {
+			margin: 0;
 			@media (min-width: $desktop-min) {
 				margin-right: 20px;
 			}

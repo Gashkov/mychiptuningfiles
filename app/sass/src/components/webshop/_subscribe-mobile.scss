@@ -1,0 +1,51 @@
+.subscribe {
+	display: block;
+	padding: 40px 0;
+	@media (min-width: $tablet-min) {
+		display: none;
+	}
+	&__container {
+		margin: 0 20px;
+		background: #F8F8F8;
+		padding-bottom: 15px;
+		border-radius: 0 0 6px 6px;
+	}
+	&__content {
+		padding: 15px 20px;
+		background-color: $red;
+		border-radius: 6px 6px 0 0;
+		color: $white;
+		margin-bottom: 15px;
+		p {
+			margin: 0;
+		}
+	}
+	&__form {
+		margin: 0 15px;
+		display: flex;
+		box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
+		border-radius: 5px;
+		height: 50px;
+		color: $primaryColor;
+	}
+	&__email {
+		padding: 10px 15px;
+		width: calc(100% - 50px);
+	}
+	&__form-submit {
+		position: relative;
+		i {
+			position: absolute;
+			top: 13px;
+			right: 15px;
+			font-size: 25px;
+			color: $white;
+		}
+		input {
+			width: 50px;
+			height: 50px;
+			background-color: $red;
+			border-radius: 0 5px 5px 0;
+		}
+	}
+}
