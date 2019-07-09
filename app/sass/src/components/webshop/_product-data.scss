@@ -1,0 +1,232 @@
+.product-data {
+	margin-bottom: 30px;
+	&__img {
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
+	}
+	&__content {
+		padding-top: 30px;
+		@media (min-width: $tablet-min) {
+			padding-top: 60px;
+		}
+		h4 {
+			color: $red;
+			font-size: 24px;
+			margin-bottom: 5px;
+			font-weight: $semiboldFont;
+		}
+
+	}
+	&__feedback {
+		margin-bottom: 20px;
+		p {
+			margin: 0;
+		}
+	}
+	&__img-mobile {
+		margin-bottom: 15px;
+		@media (min-width: $tablet-min) {
+			display: none;
+		}
+	}
+	&__feedback-header {
+		display: flex;
+		margin-bottom: 15px;
+		.stars {
+			margin-right: 5px;
+			color: $yellow;
+			font-size: 15px;
+			margin-right: 10px;
+		}
+	}
+	&__feedback-author {
+		color: $primaryColor;
+		font-size: 14px;
+		text-decoration: underline;
+		&:hover {
+			color: $primaryColor;
+			text-decoration: none;
+		}
+	}
+	&__title {
+		padding: 10px 15px;
+		border-radius: 5px;
+		border: 1px solid #DDDDDD;
+		background-color: #EAEAEA;
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		@media (min-width: $tablet-min) {
+			display: flex;
+		}
+		span {
+			&:last-child {
+				font-size: 14px;
+				font-style: italic;
+			}
+		}
+	}
+	.striped-list {
+		margin-bottom: 30px;
+	}
+	.striped-item {
+		padding: 3px 0;
+		@media (min-width: $tablet-min) {
+			padding: 5px 15px 5px 8px;
+		}
+		&:nth-child(even) {
+			background-color: transparent;
+			@media (min-width: $tablet-min) {
+				background-color: #F8F8F8;
+			}
+		}
+	}
+	.order-name {
+		width: 100%;
+		@media (min-width: $tablet-min) {
+			width: 80%;
+		}
+	}
+	.order-data {
+		width: 20%;
+		justify-content: flex-end;
+		white-space: nowrap;
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: flex;
+		}
+	}
+	.label-checkbox-wrap {
+
+		input:checked ~ .label-checkbox {
+			background-color: $red;
+			border: none;
+			@media (min-width: $tablet-min) {
+				background-color: $white;
+				border: 1px solid #E2E2E2
+			}
+			&:after {
+				color: $white;
+				@media (min-width: $tablet-min) {
+					color: $primaryColor;
+				}
+			}
+		} 
+	} 
+
+	&__result {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+		@media (min-width: $tablet-min) {
+			padding: 10px 10px 10px 25px;
+			border: 1px solid #EBEBEB;
+			border-radius: 5px;
+			flex-wrap: nowrap;
+		}
+	}
+	&__total {
+		font-size: 20px;
+		font-weight: $semiboldFont;
+		white-space: nowrap;
+		margin-right: 5px;
+		@media (min-width: $desktop-min) {
+			font-size: 24px;
+		}
+	}
+	&__btn {
+		display: flex;
+	}
+	&__quantity {
+		border: 1px solid #EBEBEB;
+		border-radius: 5px;
+		width: 70px;
+		text-align: center;
+		padding: 10px;
+		margin-right: 10px;
+		font-size: 18px;
+		color: $primaryColor;
+		// display: none;
+		// @media (min-width: $desktop-min) {
+		// 	display: flex;
+		// }
+	}
+	.cta-icon {
+		&__text {
+			padding: 14.5px 15px;
+			font-size: 16px;
+ 			@media ( min-width: $desktop-min ) {
+				padding: 14.5px 30px;
+			}
+		}
+	}
+}
+
+.product-info {
+	display: none;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
+	&__container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-top: 4px solid #EBEBEB;
+		border-bottom: 4px solid #EBEBEB;
+	}
+	&__content {
+		h4 {
+			font-size: 20px;
+			font-weight: $semiboldFont;
+			margin-bottom: 10px;
+		}
+	}
+	&__img {
+		position: relative;
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: 20px;
+		i {
+			font-size: 50px;
+			position: absolute;
+			top: 50%;
+  		left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&__downloads {
+		a {
+			background-color: #FAFAFA;
+			border: 1px solid #EBEBEB;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			display: flex;
+			justify-content: space-between;
+			color: $primaryColor;
+		}
+	}
+	&__downloads-name {
+		padding: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			margin-right: 20px;
+		}
+	}
+	&__downloads-value {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__downloads-icon {
+		padding: 6px 10px;
+		margin-left: 10px;
+		background-color: #A5A5A5;
+		color: $white;
+		border-radius: 0 5px 5px 0;
+	}
+}
