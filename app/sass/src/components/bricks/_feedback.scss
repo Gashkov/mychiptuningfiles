@@ -41,6 +41,10 @@
 		border-top: 1px solid #EBEBEB;
 		margin-top: 20px;
 		cursor: pointer;
+		margin-bottom: 30px;
+		@media (min-width: $tablet-min) {
+			margin-bottom: 0;
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -66,18 +70,59 @@
 		margin-bottom: 15px;
 		resize: none;
 	}
+	h4 {
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
+	}
 	textarea {
 		min-height: 150px;
+	}
+	&__wrap-form {
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
 	}
 	&__send {
 		display: flex;
 		justify-content: flex-end;
+		.cta-icon {
+			width: 100%;
+			.cta-icon__text {
+				width: calc(100% - 50px);
+				text-align: center;
+				background-color: $primaryColor;
+			}
+			.cta-icon__icon {
+				background-color: $darkGray;
+				i {
+					transform: rotate(90deg);
+					@media (min-width: $tablet-min) {
+						transform: rotate(0);
+					}
+				}
+			}
+			@media (min-width: $tablet-min) {
+				width: auto;
+				.cta-icon__text {
+					text-align: left;
+					width: auto;
+					background-color: $green;
+				}
+				.cta-icon__icon {
+					background-color: $darkGreen;
+				}
+			}
+		}
 		.cta-icon__text {
 			padding: 14.5px 20px;
 		}
 	}
 	&__rate {
 		display: flex;
+		margin-bottom: 10px;
 	}
 	.stars-wrap {
 		position: relative;

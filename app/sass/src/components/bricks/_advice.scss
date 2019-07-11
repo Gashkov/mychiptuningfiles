@@ -112,7 +112,8 @@
 }
 
 .auto-detail-tune .advice,
-.order-process .advice {
+.order-process .advice,
+.product-details .advice {
 	display: none;
 	@media (min-width: $tablet-min) {
 		display: block;

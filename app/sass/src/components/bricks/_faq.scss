@@ -108,3 +108,15 @@
 		}
 	}
 }
+
+/******************************
+****** Custom styles below***	
+******************************/
+.product-details {
+	.faq {
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
+	}
+}

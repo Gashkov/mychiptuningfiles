@@ -157,6 +157,15 @@
 //webshop-products
 .webshop-products {
 	margin-bottom: 30px;
+	&__title {
+		padding-bottom: 15px;
+		border-bottom: 1px solid #E7E7E7;
+		margin-bottom: 30px;
+		h4 {
+			font-size: 24px;
+			font-weight: $semiboldFont;
+		}
+	}
 }
 
 //webshop-card
@@ -244,6 +253,15 @@
 		border-radius: 0 0 5px 0;
 		@media (min-width: $tablet-min) {
 			display: flex;
+		}
+	}
+}
+
+.product-details {
+	.webshop-products {
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: block;
 		}
 	}
 }
