@@ -155,25 +155,11 @@
 	&__btn {
 		display: flex;
 	}
-	&__quantity {
-		border: 1px solid #EBEBEB;
-		border-radius: 5px;
-		width: 70px;
-		text-align: center;
-		padding: 10px;
-		margin-right: 10px;
-		font-size: 18px;
-		color: $primaryColor;
-		// display: none;
-		// @media (min-width: $desktop-min) {
-		// 	display: flex;
-		// }
-	}
 	.cta-icon {
 		&__text {
 			padding: 14.5px 15px;
 			font-size: 16px;
- 			@media ( min-width: $desktop-min ) {
+			@media ( min-width: $desktop-min ) {
 				padding: 14.5px 30px;
 			}
 		}
@@ -219,7 +205,7 @@
 			font-size: 50px;
 			position: absolute;
 			top: 50%;
-  		left: 50%;
+			left: 50%;
 			transform: translate(-50%, -50%);
 		}
 	}
@@ -254,5 +240,19 @@
 		background-color: #A5A5A5;
 		color: $white;
 		border-radius: 0 5px 5px 0;
+	}
+}
+
+.quantity {
+	border: 1px solid #EBEBEB;
+	border-radius: 5px;
+	width: 70px;
+	text-align: center;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+	color: $primaryColor;
+	@media (min-width: $desktop-min) {
+		padding: 10px 5px 10px 10px;
 	}
 }

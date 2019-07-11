@@ -1,0 +1,172 @@
+.checkout-full {
+	padding: 40px 0 70px 0;
+	.img-item {
+		width: 14.5%;
+	}
+	.product-item	{
+		width: 41.8%;
+	}
+	.price-item,
+	.quantity-item,
+	.subtotal-item  {
+		width: 13%;
+	}
+	.product-item {
+
+	}
+	.del-item {
+		width: 4.7%;
+		color: $red;
+		font-size: 18px;
+		cursor: pointer;
+	}
+	&__nav {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin-bottom: 10px;
+		font-weight: $semiboldFont;
+		.product-item {
+				padding-left: 3%;
+				text-align: left;
+			}
+	}
+
+	&__row {
+		padding: 10px 0;
+		border: 1px solid #E7E7E7;
+		border-radius: 6px;
+		margin-bottom: 10px;
+		display: flex;
+		font-weight: $semiboldFont;
+		.checkout-full__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-right: 1px solid #e7e7e7;
+			&:last-child {
+				border-right: none;
+			}
+			&.product-item {
+				justify-content: flex-start;
+				padding-left: 3%;
+			}
+		}
+		.quantity {
+			margin-right: 0;
+		}
+	}
+
+	&__data {
+		margin-top: 30px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	&__back {
+		.cta-icon__icon {
+			background-color: #E68600;
+		}
+		.cta-icon {
+			background-color: #FF9400;
+		}
+	}
+	&__payment {
+		display: flex;
+		.cta-paypal {
+			font-size: 18px;
+			font-weight: $semiboldFont;
+			background-color: #FFC439;
+			border-radius: 5px;
+			padding: 5px;
+			height: 100%;
+			padding: 14.5px 15px;
+			margin-right: 10px;
+			color: $primaryColor;
+			text-shadow: 0px 1px 0px #fff, 0 0 1em #fff;
+			display: flex;
+			align-items: center;
+			img {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.payment-icons {
+		border: 1px solid #EBEBEB;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		span {
+			padding: 11px 20px;
+			background-color: #EBEBEB;
+		}
+		.icons-wrap {
+			padding: 10px 20px;
+		}
+	}
+
+	&__total {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__total-subscribe {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 16px;
+		font-weight: $semiboldFont;
+		form {
+			display: flex;
+		}
+		input {
+			border: 1px solid #EBEBEB;
+			border-radius: 5px 0 0 5px;
+			padding: 12px 20px;
+			display: inline-block;
+			max-width: 300px;
+			width: 100%;
+		}
+		button {
+			padding: 12px 20px;
+			color: $white;
+			background-color: $primaryColor;
+			border-radius: 0 5px 5px 0;
+			margin-left: -3px;
+		}
+	}
+	&__total-data {
+		padding: 20px 15px;
+		border: 1px solid #EBEBEB;
+		border-radius: 6px;
+		max-width: 370px;
+		width: 100%;
+		margin-bottom: 5px;
+		.total-data {
+			display: flex;
+			span {
+				width: 60%;
+				text-align: right;
+				&:last-child {
+					width: 40%;
+					display: block;
+				}
+			}
+			.green {
+				color: $green;
+			}
+			&.summ {
+				margin-top: 5px;
+				padding-top: 5px;
+				border-top: 1px solid #EBEBEB;
+				span {
+					font-size: 20px;
+					font-weight: $semiboldFont;
+				}
+			}
+		}
+	}
+}
