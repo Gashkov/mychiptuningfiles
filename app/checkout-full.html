@@ -369,13 +369,17 @@
 							<div class="del-item checkout-full__item"></div>
 						</div>
 						<div class="checkout-full__row">
+							<div class="del-mobile">
+								<i class="fas fa-times"></i>
+							</div>
 							<div class="img-item checkout-full__item">
 								<img src="img/products/alientech_kessv3-img.png" alt="#">
 							</div>
 							<div class="product-item checkout-full__item">KESSV2 and K-Tag combo kit slave</div>
 							<div class="price-item checkout-full__item">€ 3.500,00</div>
 							<div class="quantity-item checkout-full__item">
-								<input type="number" class="quantity" value="1">
+								<label for="quantity2">Aantal:</label>
+								<input type="number" id="quantity2" class="quantity" value="1">
 							</div>
 							<div class="subtotal-item checkout-full__item">€ 3.500,00</div>
 							<div class="del-item checkout-full__item">
@@ -383,13 +387,17 @@
 							</div>
 						</div>
 						<div class="checkout-full__row">
+							<div class="del-mobile">
+								<i class="fas fa-times"></i>
+							</div>
 							<div class="img-item checkout-full__item">
 								<img src="img/products/alientech_kessv2-img.png" alt="#">
 							</div>
 							<div class="product-item checkout-full__item">KESSV2 and K-Tag combo kit slave</div>
 							<div class="price-item checkout-full__item">€ 3.500,00</div>
 							<div class="quantity-item checkout-full__item">
-								<input type="number" class="quantity" value="1">
+								<label for="quantity">Aantal:</label>
+								<input type="number" id="quantity" class="quantity" value="1">
 							</div>
 							<div class="subtotal-item checkout-full__item">€ 3.500,00</div>
 							<div class="del-item checkout-full__item">
@@ -424,7 +432,10 @@
 								<div class="checkout-full__total-subscribe">
 									<form action="">
 										<input type="text" required placeholder="Vul je kortingscode in">
-										<button type="submit">Korting toepassen</button>
+										<button type="submit">
+											<span>Korting toepassen</span>
+											<i class="fas fa-angle-double-right"></i>
+										</button>
 									</form>
 									<div class="payment-icons">
 										<span>Veilig betalen</span>
