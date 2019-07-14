@@ -1,0 +1,73 @@
+.account {
+	padding: 60px 0;
+	@media (min-width: $tablet-min) {
+		padding: 110px 0;
+	}
+	p {
+		margin-bottom: 45px;
+	}
+	&__cta {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+		.cta-icon {
+			margin-bottom: 20px;
+			&_facebook {
+				.cta-icon__text {
+					padding: 14.5px 40px;
+				}
+			}
+		}
+	}
+}
+
+.login {	
+	input {
+		display: block;
+		border: 1px solid #E0E0E0;
+		background: #F8F8F8;
+		width: 100%;
+		margin-bottom: 10px;
+		font-size: 16px;
+		padding: 5px 15px;
+		@media (min-width: $tablet-min) {
+			padding: 12px 20px
+		}
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__link {
+		color: $red;
+		text-decoration: underline;
+	}
+}
+
+.create-account	{
+	max-width: 770px;
+	margin: 0 auto;
+	input {
+		display: block;
+		border: 1px solid #E0E0E0;
+		background: #F8F8F8;
+		width: 100%;
+		margin-bottom: 20px;
+		font-size: 16px;
+		padding: 12px 20px
+	}
+	.checkout-item__body {
+		display: block;
+	}
+	.checkout-item__header {
+		i {
+			display: none;
+		}
+	}
+	.login__buttons {
+		margin-top: 30px;
+	}
+}

@@ -597,8 +597,25 @@
 		padding: 15px 20px;
 		color: $white;
 		transition: .3s;
+		position: relative;
+		i {
+			position: absolute;
+			right: 15px;
+			top: 20px;
+			font-size: 18px;
+			transition: .3s;
+			@media (min-width: $tablet-min) {
+				display: none;
+			}
+		}
+		&_gray {
+			background-color: $primaryColor;
+		}
 		&.active {
 			background-color: $green;
+			i {
+				transform: rotate(180deg);
+			}
 		}
 		@media (min-width: $tablet-min) {
 			border-radius: 5px 5px 0 0;
