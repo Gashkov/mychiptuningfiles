@@ -670,6 +670,14 @@
 				right: 20px;
 				top: 15px;
 			}
+			&_chevron {
+				&:after {
+					content: '\f078';
+				}
+				select {
+					background-color: $white;
+				}
+			}
 		}
 		select {
 			width: 100%;
@@ -685,7 +693,7 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
-			
+			cursor: pointer;
 		}
 		.label-checkbox-wrap {
 			font-size: 14px;
