@@ -57,6 +57,46 @@
 			background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, 1));
 		}
 	}
+
+	&_full {
+		padding: $brick-padding;
+		.feedback__item {
+			border: none;
+			background-color: transparent;
+			padding: 0;
+			margin-bottom: 40px;
+			h4 {
+				font-size: 20px;
+				font-weight: $semiboldFont;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #EAEAEA;
+				margin-bottom: 10px;
+			}
+		}
+		.feedback__row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.feedback__result {
+			display: flex;
+			.stars {
+				margin-right: 5px;
+				margin-bottom: 0;
+			}
+		}
+		.feedback__data {
+			color: #B8B8B8;
+			font-size: 15px;
+			font-weight: $semiboldFont;
+			.separator {
+				margin: 0 5px;
+			}
+		}
+	}
+	.leave-feedback {
+		padding-top: 50px;
+	}
 }
 
 .leave-feedback {
