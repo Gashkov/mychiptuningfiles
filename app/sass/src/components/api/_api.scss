@@ -1,4 +1,8 @@
 .api {
+	padding-bottom: 0;
+	h3 {
+		margin-bottom: 5px;
+	}
 	&__content {
 		position: relative;
 		margin-bottom: 50px;
@@ -52,9 +56,7 @@
 	&:after {
 		bottom: 0;
 	}
-	h3 {
-		margin-bottom: 5px;
-	}
+	
 	&__wrap {
 		margin-bottom: 30px;
 	}
@@ -86,4 +88,149 @@
 		}
 	}
 }
+
+.api-example {
+	background-color: #F8F8F8;
+	padding: 60px 0;
+	&__header {
+		text-align: center;
+	}
+	&__tabs {
+		.nav-item {
+			.nav-link {
+				background-color: #E6E6E6;
+				color: $primaryColor;
+				text-align: center;
+				margin-right: 1px;
+				@media (min-width: $tablet-min) {
+					width: 130px;
+
+				}
+				&.active {
+					background-color: $primaryColor;
+					border: none;
+					color: $white;
+				}
+			}
+		}
+		.tab-content {
+			background-color: #4B4B4B;
+			color: $white;
+			border-radius: 0 5px 5px 5px;
+			padding: 15px;
+		}
+	}
+	&__code {
+		color: $white;
+		.api-example__code-green {
+			color: $green;
+		}
+		.api-example__code-comment {
+			color: #7E7E7E;
+		}
+	}
+}
+
+.api-price {
+	background: url('../../../../img/api-price_bg.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 50px 0;
+	text-align: center;
+	&__header {
+		color: $white;
+	}
+	&__wrap {
+		display: flex;
+	}
+	&__item {
+		width: 25%;
+		&:first-child {
+			.api-price__title {
+				border-radius: 5px 0 0 0;
+			}
+			.api-price__body {
+				border-radius: 0 0 0 5px;
+			}
+		}
+		&:last-child {
+			.api-price__title {
+				border-radius: 0 5px 0 0;
+			}
+			.api-price__body {
+				border-radius: 0 0 5px 0;
+			}
+		}
+		&:nth-child(2) {
+			.api-price__body {
+				border-left: 1px solid $white;
+			}
+			.api-price__title {
+				border-left: 1px solid #EAEAEA;
+			}
+		}
+		&:nth-child(3) {
+			.api-price__body {
+				border-left: 1px solid $white;
+				border-right: 1px solid $white;
+			}
+			.api-price__title {
+				border-left: 1px solid #EAEAEA;
+				border-right: 1px solid #EAEAEA;
+			}
+		}
+	}
+	&__title {
+		padding: 20px;
+		background-color: $white;
+		font-size: 20px;
+		&_red {
+			background-color: $red;
+			color: $white;
+		}
+	}
+	&__body {
+		background-color: rgba(255, 255, 255, .94);
+		padding: 0 20px 20px 20px;
+	}
+	&__discount {
+		background-color: $green;
+		border-left: 1px solid $white;
+		color: $white;
+		padding: 8px;
+		font-size: 18px;
+	}
+	&__list {
+		margin-bottom: 35px;
+		li {
+			padding: 10px 0;
+			border-bottom: 1px solid $white;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	&__cta {
+		background-color: $red;
+		display: block;
+		padding: 15px;
+		border-radius: 5px;
+		color: $white;
+		font-size: 30px;
+		font-weight: $semiboldFont;
+		&:hover {
+			background-color: $darkRed;
+		}
+		&_green {
+			font-weight: $boldFont;
+			background-color: $green;
+			&:hover {
+				background-color: $darkGreen;
+			}
+		}
+	}
+}
+
+
+
 
