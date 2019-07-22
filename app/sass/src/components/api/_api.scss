@@ -8,21 +8,37 @@
 		margin-bottom: 50px;
 	}
 	&__text {
-		width: 60%;
+		
+		@media (min-width: $desktop-min) {
+			width: 60%;
+		}
 		h4 {
-			font-size: 24px;
+			font-size: 17px;
 			margin-bottom: 30px;
+			@media (min-width: $tablet-min) {
+				font-size: 24px;
+			}
 		}
 	}
 	&__text-img {
-		position: absolute;
-		right: 0;
-		top: 0;
+		margin-bottom: 25px;
+		text-align: center;
+		@media (min-width: $desktop-min) {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin: 0;
+		}
 	}
 	&__cta {
 		a {
-			width: 244px;
+			width: 100%;
 			justify-content: space-between;
+			margin-bottom: 10px;
+			@media (min-width: $tablet-min) {
+				width: 244px;
+				margin-bottom: 0;
+			}
 			.cta-icon__text {
 				text-align: center;
 				width: calc(100% - 50px);
@@ -61,50 +77,131 @@
 		margin-bottom: 30px;
 	}
 	&__item {
-		box-shadow: 5px 15px 40px -10px rgba(0, 0, 0, 0.3);
+		border: 1px solid #EBEBEB;
 		border-radius: 5px;
 		background-color: $white;
 		height: 100%;
+		@media (min-width: $tablet-min) {
+			box-shadow: 5px 15px 40px -10px rgba(0, 0, 0, 0.3);
+			border: none;
+		}
 	}
 	&__header {
-		
+		display: flex;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
 	}
 	&__icon {
-		padding: 25px;
-		font-size: 60px;
-		color: #E0E0E0;
+		background-color: $red;
+		padding: 10px;
+		font-size: 26px;
+		color: $white;
+		width: 55px;
+		border-radius: 5px 0 0 0;
+		@media (min-width: $tablet-min) {
+			font-size: 60px;
+			padding: 25px;
+			width: 100%;
+			background-color: none;
+			color: #E0E0E0;
+			border-radius: 0;
+			background-color: $white;
+		}
 	}
 	&__title {
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: $semiboldFont;
-		padding: 10px;
+		padding: 10px 15px;
 		color: $white;
-		background-color: $red;
+		background-color: $primaryColor;
+		width: calc(100% - 55px);
+		text-align: left;
+		border-radius: 0 5px 0 0;
+		@media (min-width: $tablet-min) {
+			font-size: 20px;
+			background-color: $red;
+			width: 100%;
+			padding: 10px;
+			border-radius: 0;
+			text-align: center;
+		}
 	}
 	&__text {
-		padding: 25px;
+		padding: 15px;
+		text-align: left;
+		@media (min-width: $tablet-min) {
+			padding: 25px;
+			text-align: center;
+		}
 		p {
 			margin: 0;
+			@medi
 		}
 	}
 }
 
 .api-example {
 	background-color: #F8F8F8;
-	padding: 60px 0;
+	padding: 30px 0 40px 0;
+	@media (min-width: $tablet-min) {
+		padding: 60px 0;
+	}
 	&__header {
 		text-align: center;
+		p {
+			margin-bottom: 60px;
+			@media (min-width: $tablet-min) {
+				margin-bottom: 30px;
+			}
+		}
 	}
 	&__tabs {
+		display: flex;
+		flex-direction: column-reverse;
+		position: relative;
+		@media (min-width: $tablet-min) {
+			display: block;
+		}
+		.nav-tabs {
+			border: none;
+			// display: flex;
+			@media (min-width: $tablet-min) {
+				border-bottom: 1px solid #dee2e6;
+			}
+		}
 		.nav-item {
+			flex-grow: 1;
+			@media (min-width: $tablet-min) {
+				flex-grow: 0;
+			}
+			&:first-child {
+				position: absolute;
+				top: -40px;
+				left: 0;
+				@media (min-width: $tablet-min) {
+					position: static;
+				}
+				.nav-link {
+					&:first-child {
+						border-radius: 5px 5px 0 0;
+					}
+				}
+			}
+			@media (min-width: $tablet-min) {
+				position: static;
+			}
 			.nav-link {
 				background-color: #E6E6E6;
 				color: $primaryColor;
 				text-align: center;
 				margin-right: 1px;
+				position: relative;
+				border-radius: 5px;
+				
 				@media (min-width: $tablet-min) {
 					width: 130px;
-
+					border-radius: 5px 5px 0 0;
 				}
 				&.active {
 					background-color: $primaryColor;
@@ -118,6 +215,10 @@
 			color: $white;
 			border-radius: 0 5px 5px 5px;
 			padding: 15px;
+			margin-bottom: 20px;
+			@media (min-width: $tablet-min) {
+				margin: 0;
+			}
 		}
 	}
 	&__code {
@@ -141,10 +242,15 @@
 		color: $white;
 	}
 	&__wrap {
-		display: flex;
+		display: none;
+		@media (min-width: $tablet-min) {
+			display: flex;
+		}
 	}
 	&__item {
 		width: 25%;
+		display: flex;
+		flex-direction: column;
 		&:first-child {
 			.api-price__title {
 				border-radius: 5px 0 0 0;
@@ -192,6 +298,10 @@
 	&__body {
 		background-color: rgba(255, 255, 255, .94);
 		padding: 0 20px 20px 20px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 	}
 	&__discount {
 		background-color: $green;
@@ -230,6 +340,99 @@
 		}
 	}
 }
+
+.api-price-mobile {
+	@media (min-width: $tablet-min) {
+		display: none;
+	}
+	&__tabel {
+		margin-bottom: 25px;
+		.table-header {
+			padding: 10px;
+			border-radius: 5px 5px 0 0;
+			background-color: $red;
+			font-weight: $semiboldFont;
+			color: $white;
+		}
+		.table-body {
+			padding: 15px 15px 15px 30px;
+			color: $white;
+			background-color: rgba(255, 255, 255, .3);
+			border-radius: 0 0 5px 5px;
+			li {
+				margin-bottom: 10px;
+				text-align: left;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				i {
+					color: $green;
+					font-size: 18px;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	&__price {
+		.mobile-price {
+			display: flex;
+			color: $white;
+			align-items: center;
+			margin-bottom: 10px;
+			&_discount {
+				margin-bottom: 40px;
+			}
+			&__duration {
+				width: calc(55% - 25px);
+				background-color: $white;
+				font-size: 20px;
+				color: $primaryColor;
+				padding: 12px 15px;
+				border-radius: 5px 0 0 5px;
+				text-align: left;
+			}
+			&__cost {
+				text-align: right;
+				color: $primaryColor;
+				background-color: #F8F8F8;
+				width: calc(45% - 25px);
+				font-size: 25px;
+				font-weight: $semiboldFont;
+				padding: 12px 5px;
+				position: relative;
+			}
+			&__icon {
+				background-color: $red;
+				color: $white;
+				font-size: 18px;
+				padding: 12px 15px;
+				border-radius: 0 5px 5px 0;
+				width: 50px;
+			}
+			&__discount {
+				padding: 3px 8px;
+				color: $white;
+				background-color: $green;
+				font-size: 16px;
+				text-align: center;
+				border-radius: 0 0 5px 5px;
+				position: absolute;
+				bottom: -31px;
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
+	p {
+		margin: 0;
+		color: $white;
+	}
+}
+
+
+
+
 
 
 
