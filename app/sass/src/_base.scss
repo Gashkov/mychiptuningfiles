@@ -189,3 +189,29 @@ img {
 		font-weight: $semiboldFont;
 	}
 }
+
+.border-box {
+	padding: 25px;
+	position: relative;
+	margin-bottom: 30px;
+	&:before,
+	&:after {
+		content: '';
+		height: 4px;
+		width: 100%;
+		border-radius: 5px;
+		background-color: #EBEBEB;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	&:before {
+		top: 0;
+	}
+	&:after {
+		bottom: 0;
+	}
+	.microblog-video {
+		margin-bottom: 0;
+	}
+}

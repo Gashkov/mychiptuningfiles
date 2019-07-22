@@ -43,6 +43,13 @@
 		@media (min-width: $tablet-min) {
 			display: none;
 		}
+		&_full {
+			max-width: 680px;
+			margin: 0 auto 25px auto;
+			@media (min-width: $tablet-min) {
+				display: block;
+			}
+		}
 	}
 
 	&__login {
