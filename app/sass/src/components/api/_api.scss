@@ -1,14 +1,17 @@
 .api {
 	padding-bottom: 0;
 	h3 {
-		margin-bottom: 5px;
+		margin-bottom: 20px;
 	}
 	&__content {
 		position: relative;
 		margin-bottom: 50px;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
 	}
 	&__text {
-		
+		flex: 1 0 auto;
 		@media (min-width: $desktop-min) {
 			width: 60%;
 		}
@@ -17,6 +20,9 @@
 			margin-bottom: 30px;
 			@media (min-width: $tablet-min) {
 				font-size: 24px;
+			}
+			a {
+				color: $red;
 			}
 		}
 	}
@@ -31,6 +37,7 @@
 		}
 	}
 	&__cta {
+		flex: 0 0 auto;
 		a {
 			width: 100%;
 			justify-content: space-between;
@@ -47,6 +54,16 @@
 				margin-right: 10px;
 			}
 		}
+		&_lg {
+			a {
+				@media (min-width: $tablet-min) {
+					width: auto;
+				}
+			}
+		}
+	}
+	.m-b-35 {
+		margin-bottom: 35px;
 	}
 }
 
@@ -54,24 +71,6 @@
 	padding: 40px 0;
 	position: relative;
 	text-align: center;
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 5px;
-		border-radius: 6px;
-		background-color: #EBEBEB;
-		position: absolute;
-		left: 0;
-		right: 0;
-	}
-	&:before {
-		top: 0;
-	}
-	&:after {
-		bottom: 0;
-	}
 	
 	&__wrap {
 		margin-bottom: 30px;

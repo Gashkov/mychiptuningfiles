@@ -28,6 +28,9 @@ p {
 	@media (min-width: $tablet-min) {
 		font-size: $p-desktop;
 	}
+	a {
+		color: $red;
+	}
 }
 strong {
 	font-weight: $blackFont;
@@ -211,7 +214,26 @@ img {
 	&:after {
 		bottom: 0;
 	}
+	&_bottom {
+		&:before {
+			display: none;
+		}
+	}
 	.microblog-video {
 		margin-bottom: 0;
+	}
+}
+
+.check-list {
+	margin-bottom: 40px;
+	li {
+		font-size: 17px;
+		font-weight: $semiboldFont;
+		margin-bottom: 30px;
+		i {
+			color: $green;
+			margin-right: 30px;
+			font-size: 25px;
+		}
 	}
 }
