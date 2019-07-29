@@ -6,11 +6,15 @@
 	.product-set-wrap_param {
 		padding-top: 50px;
 	}
-	.winols-tabel {
-		display: none;
-		@media (min-width: $desktop-min) {
-			display: block;
-		}
+}
+
+.winols-tabel {
+	display: none;
+	@media (min-width: $desktop-min) {
+		display: block;
+	}
+	&_dealer {
+		padding: 60px 0;
 	}
 }
 
@@ -56,7 +60,7 @@
 				}
 			}
 			&_base {
-			li {
+				li {
 					color: $primaryColor;
 				}
 			}
@@ -169,6 +173,12 @@
 	&_param {
 		width: 34.188%;
 	}
+	> img {
+		margin-bottom: 25px;
+	}
+	&_dealer {
+		padding-top: 333px;
+	}
 }
 
 .product-set {
@@ -211,6 +221,20 @@
 		}
 		i {
 			color: $red;
+		}
+		&_price {
+			font-size: 30px;
+			font-weight: $boldFont;
+			height: 80px;
+		}
+		&_inactive {
+			color: #C6C6C6;
+			i {
+				color: #C6C6C6;
+			}
+		}
+		&_active {
+			color: $green;
 		}
 		&:last-child {
 			border-bottom: none;

@@ -67,4 +67,23 @@
 	&__cta-text {
 		padding: 15px 30px;
 	}
+
+	&_half {
+		padding: 70px 0 80px 0;
+		.map__content {
+			margin: 0;
+			align-items: flex-start;
+			h3 {
+				font-size: 30px;
+				margin-bottom: 20px;
+				strong {
+					display: block;
+				}
+			}
+			p {
+				font-size: 16px;
+				margin-bottom: 20px;
+			}
+		}
+	}//end .map_half
 }

@@ -1,0 +1,27 @@
+.dealer-wonder {
+	padding: 70px 0 0 0;
+	&__article {
+		h4 {
+			font-size: 20px;
+			font-style: italic;
+			font-weight: $semiboldFont;
+			margin-bottom: 30px;
+		}
+	}
+	&__cta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 0;
+		margin-bottom: 50px;
+		a {
+			max-width: 370px;
+			width: 100%;
+			.cta-icon__text {
+				padding: 14.5px 5px;
+				text-align: center;
+				width: calc(100% - 50px);
+			}
+		}
+	}
+}
