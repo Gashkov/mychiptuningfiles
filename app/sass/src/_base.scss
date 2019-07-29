@@ -194,7 +194,7 @@ img {
 }
 
 .border-box {
-	padding: 25px;
+	padding: 25px 0;
 	position: relative;
 	margin-bottom: 30px;
 	&:before,
@@ -219,21 +219,72 @@ img {
 			display: none;
 		}
 	}
+	&_bottom-mobile {
+		&:after {
+			@media (max-width: $tablet-min) {
+				display: none;
+			}
+		}
+	}
 	.microblog-video {
 		margin-bottom: 0;
 	}
 }
 
 .check-list {
-	margin-bottom: 40px;
+	@media (min-width: $tablet-min) {
+		margin-bottom: 40px;
+	}
 	li {
-		font-size: 17px;
+		font-size: 16px;
 		font-weight: $semiboldFont;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
+		padding: 12px 15px 12px 60px;
+		background-color: #F8F8F8;
+		border-radius: 5px;
+		display: flex;
+		position: relative;
+		@media (min-width: $tablet-min) {
+			font-size: 17px;
+		}
 		i {
 			color: $green;
-			margin-right: 30px;
+			margin-right: 20px;
 			font-size: 25px;
+			position: absolute;
+			left: 15px;
 		}
+	}
+
+	&_no-border {
+		li {
+			background-color: transparent;
+			text-align: left;
+			padding: 0 15px 0 40px;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 20px;
+			i {
+				left: 0;
+			}
+		}
+	}
+}
+
+.mobile-center {
+	text-align: center;
+	@media (min-width: $tablet-min) {
+		text-align: left;
+	}
+}
+
+.reverse-mobile {
+	display: flex;
+	flex-direction: column;
+	@media (min-width: $tablet-min) {
+		display: block;
+	}
+	.benefits {
+		order: -1;
 	}
 }

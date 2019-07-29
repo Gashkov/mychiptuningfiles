@@ -157,5 +157,12 @@ $(document).ready(function() {
 	  event.preventDefault();
 	});
 
+    //winolds carousel
+
+    $('.carousel').carousel({
+        interval: 2000000000,
+        wrap: false
+    })
+
 
 });

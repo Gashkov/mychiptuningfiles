@@ -15,6 +15,9 @@ gulp.task('browser-sync', function() {
             baseDir: "app/"
         }
     });
+    gulp.watch('./app/*.html', browserSync.reload);
+    gulp.watch('./app/js/**/*.js', browserSync.reload);
+    gulp.watch('./app/sass/**/*.scss', gulp.series('sass'), browserSync.reload);
 });
 
 // sass
@@ -74,10 +77,10 @@ gulp.task('build', function() {
 });
 
 // gulp watch
-gulp.task('watch', ['browser-sync', 'scripts', 'sass'], function() {
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
-    gulp.watch('app/sass/**/*.scss', ['sass'], browserSync.reload);
+gulp.task('watch', gulp.series('browser-sync', 'scripts', 'sass'), function() {
+	
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', function() {
+
+});
