@@ -206,6 +206,9 @@
 		text-align: left;
 		margin-bottom: 80px;
 	}
+	&_between {
+		justify-content: space-between;
+	}
 	&__btn {
 		background-color: $primaryColor;
 		border-radius: 5px;
@@ -258,6 +261,35 @@
 			display: block;
 			&.red {
 				color: $red;
+			}
+		}
+	}
+	&__content {
+		width: 60%;
+		h4 {
+			font-size: 25px;
+			font-weight: $lightFont;
+			max-width: 400px;
+			line-height: 35px;
+			span {
+				color: $red;
+				font-weight: $semiboldFont;
+			}
+		}
+		p {
+			display: inline-block;
+			margin: 0;
+			padding: 6px 15px;
+			border-radius: 5px;
+			background-color: #EAEAEA;
+		}
+		+ .cta-icon {
+			width: 40%;
+			max-width: 370px;
+			width: 100%;
+			.cta-icon__text {
+				width: calc(100% - 50px);
+				text-align: center;
 			}
 		}
 	}
