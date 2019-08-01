@@ -46,7 +46,10 @@
 
 .dealer-tiles {
 	text-align: center;
-	padding: 30px 0 60px 0;
+	padding: 30px 0;
+	@media (min-width: $tablet-min) {
+		padding: 30px 0 60px 0;
+	}
 	h3 {
 		margin-bottom: 0;
 	}
@@ -55,10 +58,20 @@
 	}
 	&__tile {
 		width: 100%;
-		padding: 15px;
+		padding: 5px 15px;
 		border-radius: 5px;
 		@media (min-width: $tablet-min) {
 			width: 50%;
+			padding: 15px;
+		}
+		&_35,
+		&_65,
+		&_60,
+		&_40 {
+			display: none;
+			@media (min-width: $tablet-min) {
+				display: block;
+			}
 		}
 		&_35 {
 			@media (min-width: $tablet-min) {
@@ -84,17 +97,76 @@
 }
 
 .dealer-support {
-	background-color: #EFEFEF;
+	position: relative;
 	padding-top: 40px;
+	&:before {
+			content: '';
+			height: 4px;
+			width: calc(100% - 30px);
+			border-radius: 5px;
+			background-color: #EBEBEB;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			@media (min-width: $tablet-min) {
+				display: none;
+			}
+		}
+	@media (min-width: $tablet-min) {
+		background-color: #EFEFEF;
+	}
 	h3 {
 		margin-bottom: 20px;
 	}
 	&__container {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
+		position: relative;
+		@media (min-width: $tablet-min) {
+			flex-wrap: nowrap;
+		}
 	}
-	&__content {
-		max-width: 600px;
-		padding-left: 60px;
+	&__content {	
+		@media (min-width: $tablet-min) {
+			max-width: 600px;
+			padding-left: 60px;
+		}
+		h3 {
+			position: absolute;
+			top: 15px;
+			left: 20px;
+			@media (min-width: $tablet-min) {
+				position: static;
+			}
+			span {
+				display: block;
+				@media (min-width: $tablet-min) {
+					display: inline;
+				}
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		background-color: #EFEFEF;
+		border-radius: 5px;
+		text-align: right;
+		padding-top: 5px;
+		margin-bottom: 20px;
+		@media (min-width: $tablet-min) {
+			width: auto;
+			background: none;
+			padding: 0;
+			margin: 0;
+		}
+		img {
+			max-width: 50%;
+			@media (min-width: $tablet-min) {
+				max-width: 100%;
+			}
+		}
 	}
 }
