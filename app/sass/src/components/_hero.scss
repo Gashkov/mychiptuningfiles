@@ -260,6 +260,13 @@
 			padding-bottom: 200px;
 		}
 	}
+
+	&_contact {
+		min-height: 250px;
+		@media (min-width: $tablet-min) {
+			min-height: 550px;
+		}
+	}//end .hero_contact
 }
 
 //custom select below
