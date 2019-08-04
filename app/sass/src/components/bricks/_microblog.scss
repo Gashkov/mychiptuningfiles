@@ -261,6 +261,7 @@
 			display: block;
 			&.red {
 				color: $red;
+				display: inline-block;
 			}
 		}
 	}

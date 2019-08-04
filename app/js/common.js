@@ -158,11 +158,18 @@ $(document).ready(function() {
 	});
 
     //winolds carousel
-
     $('.carousel').carousel({
         interval: 2000000000,
         wrap: false
     })
+
+    //map points tooltip
+    $('.map-point').on('mouseover', function() {
+        $(this).children().css('display', 'block');
+    });
+    $('.map-point').on('mouseleave', function() {
+        $(this).children().css('display', 'none');
+    });
 
 
 });

@@ -87,3 +87,228 @@
 		}
 	}//end .map_half
 }
+
+.map-img {
+	position: relative;
+}
+.map-point {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: $green;
+	border: 3px solid $white;
+	border-radius: 50%;
+	cursor: pointer;
+	&:hover {
+		background-color: #0087e5;
+	}
+	&_1 {
+		top: 6.8%;
+    left: 6.859%;
+	}
+	&_2 {
+		top: 10.5%;
+    left: 10.37%;
+	}
+	&_3 {
+		top: 13.8%;
+    left: 23.6%;
+	}
+	&_4 {
+		top: 19.7%;
+    left: 23.245%
+	}
+	&_5 {
+		top: 36.2%;
+    left: 17.56%;
+	}
+	&_6 {
+		top: 20.5%;
+    left: 8.78%;
+	}
+	&_7 {
+		top: 24.6%;
+    left: 17.2%;
+	}
+	&_8 {
+		top: 35.7%;
+    left: 8.8%;
+	}
+	&_9 {
+		top: 48.8%;
+    left: 24.91%;
+	}
+	&_10 {
+		top: 57.8%;
+    left: 20.3%;
+	}
+	&_11 {
+		top: 56.6%;
+    left: 28.97%;
+	}
+	&_12 {
+		top: 63.35%;
+    left: 28.6%;
+	}
+	&_13 {
+		top: 71%;
+    left: 21.6%;
+	}
+	&_14 {
+		top: 10.9%;
+    left: 61.56%;
+	}
+	&_15 {
+		top: 76.567%;
+    left: 23.2%;
+	}
+	&_16 {
+		top: 1.1%;
+    left: 38.42%;
+	}
+	&_17 {
+		top: 8.99%;
+    left: 31.75%;
+	}
+	&_18 {
+		top: 8.99%;
+    left: 31.75%;
+	}
+	&_19 {
+		top: 6.9%;
+    left: 49.19%;
+	}
+	&_20 {
+		top: 10.17%;
+    left: 46%;
+	}
+	&_21 {
+		top: 13.879%;
+    left: 51.1%;
+	}
+	&_22 {
+		top: 19.31%;
+    left: 68.55%;
+	}
+	&_23 {
+		top: 20.1%;
+    left: 46.35%;
+	}
+	&_24 {
+		top: 19.62%;
+    left: 76.45%
+	}
+	&_25 {
+		top: 23.75%;
+    left: 41.4%;
+	}
+	&_26 {
+		top: 24.2%;
+    left: 54.2%;
+	}
+	&_27 {
+		top: 24.26%;
+    left: 61%;
+	}
+	&_28 {
+		top: 29.58%;
+    left: 41.9%;
+	}
+	&_29 {
+		top: 30.3%;
+    left: 50.5%;
+	}
+	&_30 {
+		top: 30.3%;
+    left: 62.63%;
+	}
+	&_31 {
+		top: 29.58%;
+    left: 72.2%;
+	}
+	&_32 {
+		top: 29.55%;
+    left: 72.2%;
+	}
+	&_33 {
+		top: 34.1%;
+    left: 49.28%
+	}
+	&_34 {
+		top: 37.1%;
+    left: 60.28%;
+	}
+	&_35 {
+		top: 41%;
+    left: 38.77%;
+	}
+	&_36 {
+		top: 39.7%;
+    left: 42.12%;
+	}
+	&_37 {
+		top: 42.8%;
+    left: 52.6%;
+	}
+	&_38 {
+		top: 51.4%;
+    left: 47.8%;
+	}
+	&_39 {
+		top: 56.77%;
+    left: 49.289%;
+	}
+	&_40 {
+		top: 59.1%;
+    left: 54.8%;
+	}
+	&_41 {
+		top: 65.7%;
+    left: 49.15%;
+	}
+	&_42 {
+		top: 65%;
+    left: 58.77%;
+	}
+	&_43 {
+		top: 68.7%;
+    left: 53.3%;
+	}
+}
+.map-point-info {
+	background-color: $white;
+	padding: 15px;
+	border-radius: 6px;
+	text-align: center;
+	position: absolute;
+	top: -90px;
+	left: 0;
+	right: 0;
+	color: $primaryColor;
+	min-width: 180px;
+	z-index: 1;
+	transform: translateX(-48%);
+	display: none;
+	&:after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 16px 10px 0 10px;
+		border-color: #fff transparent transparent transparent;
+		position: absolute;
+		bottom: -16px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	h5 {
+		font-size: 20px;
+		font-weight: $semiboldFont;
+		margin: 0;
+	}
+	p {
+		margin: 0;
+		font-size: 18px;
+	}
+}
