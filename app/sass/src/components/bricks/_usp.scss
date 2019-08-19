@@ -19,6 +19,10 @@
 		}
 	}
 
+	.usp {
+		padding: 0;
+	}
+
 	&__text {
 		color: $white;
 		h5 {
@@ -48,5 +52,8 @@
 				color: #9D9D9D;
 			}
 		}
+	}
+	&_noshadow {
+		box-shadow: none;
 	}
 }

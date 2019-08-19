@@ -98,11 +98,11 @@
 			font-size: 30px;
 			font-weight: $boldFont;
 			@media (min-width: $tablet-min) {
-				padding: 15px;
+				padding: 12px 15px;
 			}
 		}
 		p {
-			padding: 10px;
+			padding: 5px 10px;
 			background: $darkRed;
 			border-radius: 0 0 5px 5px;
 			font-size: 20px;
