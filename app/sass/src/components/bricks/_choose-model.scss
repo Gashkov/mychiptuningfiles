@@ -1,12 +1,12 @@
 .choose-model {
 	padding: 35px 0;
 	@media (min-width: $tablet-min) {
-		padding: $brick-padding;
+		padding: 80px 0 60px 0;
 	}
 	h3 {
 		font-weight: $extralightFont;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 45px;
 		span {
 			color: $red;
 			font-weight: $semiboldFont;
@@ -16,7 +16,7 @@
 	h4 {
 		background-color: $primaryColor;
 		color: $white;
-		padding: 15px;
+		padding: 17.5px;
 		border-radius: 5px;
 		font-size: 18px;
 		font-weight: $boldFont;
@@ -68,7 +68,7 @@
 	}
 	&__body {
 		background: #F8F8F8;
-		padding: 20px;
+		padding: 19px 20px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

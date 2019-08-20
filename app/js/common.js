@@ -171,5 +171,4 @@ $(document).ready(function() {
         $(this).children().css('display', 'none');
     });
 
-
 });

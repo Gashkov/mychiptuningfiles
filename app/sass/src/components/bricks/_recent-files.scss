@@ -1,5 +1,5 @@
 .recent-files {
-	padding: $brick-padding;
+	padding: 70px 0 60px 0;
 	background: url('../../../../img/recent-files_bg.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -17,6 +17,7 @@
 		margin-bottom: 30px;
 		span {
 			font-weight: $semiboldFont;
+			color: $white;
 		}
 	}
 

@@ -4,6 +4,11 @@
 	@media (min-width: $tablet-min) {
 		display: block;
 	}
+	&_top-line {
+		border-top: 1px solid #E7E7E7;
+		max-width: 1140px;
+		margin: 0 auto;
+	}
 	h3 {
 		font-weight: $extralightFont;
 		padding-bottom: 25px;

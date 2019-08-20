@@ -59,7 +59,7 @@
 	}
 
 	&_full {
-		padding: $brick-padding;
+		padding: 70px 0 20px 0;
 		.feedback__item {
 			border: none;
 			background-color: transparent;
@@ -95,7 +95,7 @@
 		}
 	}
 	.leave-feedback {
-		padding-top: 50px;
+		padding-top: 15px;
 	}
 }
 
