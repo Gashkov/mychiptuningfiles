@@ -51,7 +51,7 @@
 		}
 	}
 	&__title {
-		padding: 10px 15px;
+		padding: 6.5px 15px;
 		border-radius: 5px;
 		border: 1px solid #DDDDDD;
 		background-color: #EAEAEA;
@@ -74,7 +74,7 @@
 	.striped-item {
 		padding: 3px 0;
 		@media (min-width: $tablet-min) {
-			padding: 5px 15px 5px 8px;
+			padding: 3.5px 15px 3.5px 8px;
 		}
 		&:nth-child(even) {
 			background-color: transparent;
@@ -123,7 +123,7 @@
 		flex-wrap: wrap;
 		margin-bottom: 20px;
 		@media (min-width: $tablet-min) {
-			padding: 10px 10px 10px 25px;
+			padding: 7px 10px 7px 25px;
 			border: 1px solid #EBEBEB;
 			border-radius: 5px;
 			flex-wrap: nowrap;
@@ -235,7 +235,7 @@
 		align-items: center;
 	}
 	&__downloads-icon {
-		padding: 6px 10px;
+		padding: 6px 12.5px;
 		margin-left: 10px;
 		background-color: #A5A5A5;
 		color: $white;
@@ -253,6 +253,6 @@
 	font-size: 18px;
 	color: $primaryColor;
 	@media (min-width: $desktop-min) {
-		padding: 10px 5px 10px 10px;
+		padding: 10px 5px 10px 19px;
 	}
 }

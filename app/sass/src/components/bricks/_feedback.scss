@@ -42,9 +42,6 @@
 		margin-top: 20px;
 		cursor: pointer;
 		margin-bottom: 30px;
-		@media (min-width: $tablet-min) {
-			margin-bottom: 0;
-		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -93,9 +90,6 @@
 				margin: 0 5px;
 			}
 		}
-	}
-	.leave-feedback {
-		padding-top: 15px;
 	}
 }
 

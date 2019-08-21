@@ -1,5 +1,10 @@
 .choose-tuning {
 	padding: $brick-padding;
+
+	.border-box {
+		margin-bottom: 60px;
+	}
+
 	&__header {
 		text-align: center;
 		padding-bottom: 20px;
@@ -18,7 +23,7 @@
 			border: none;
 		}
 		p {
-			margin-bottom: 15px;
+			margin-bottom: 40px;
 		}
 		h3 {
 			font-weight: $extralightFont;
@@ -28,6 +33,11 @@
 				font-weight: $semiboldFont;
 			}
 		}
+		&_price {
+			p {
+				margin-bottom: 20px;
+			}
+		}
 	}
 	&__notification {
 		text-align: center;
@@ -35,7 +45,7 @@
 		background-color: #FFF3CD;
 		border: 1px solid #FFEEBA;
 		border-radius: 6px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 		p {
 			margin: 0;
 			color: #856404;
@@ -372,7 +382,7 @@
 		padding: 5px 10px;
 		align-items: center;
 		@media (min-width: $tablet-min) {
-			padding: 12px 25px;
+			padding: 7.5px 25px;
 		}
 	}
 	.order-data {
