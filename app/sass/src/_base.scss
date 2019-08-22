@@ -220,6 +220,9 @@ img {
 		}
 	}
 	&_bottom-mobile {
+		.check-list {
+			margin-bottom: 20px;
+		}
 		&:after {
 			@media (max-width: $tablet-min) {
 				display: none;
